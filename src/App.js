@@ -1,8 +1,8 @@
 import React from "react";
-import HelloReact from "./components/HelloReact";
+import NavBar from "./components/NavBar";
 
 function App() {
-  return <HelloReact />;
+  return <NavBar />;
 }
 
 export default App;
