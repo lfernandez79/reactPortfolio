@@ -1,4 +1,6 @@
 import React from "react";
+import "./style.css"
+
 
 function NavBar() {
   return (
@@ -21,7 +23,6 @@ function NavBar() {
             <a className="nav-link" href="contact.html">C o n t a c t</a>
           </li>
         </ul>
-
       </nav>
 
     </header>
