@@ -1,0 +1,29 @@
+main {
+    border-style: hidden;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+h3 i {
+    color: rgb(54, 152, 212);
+    margin-right: 10px;
+}
+
+a {
+    color: black;
+}
+
+p {
+    line-height: 1em;
+    color: rgba(0, 0, 0, 0.473);
+    text-align: end;
+    font-size: 30px;
+    font-family: Abel;
+    
+}
