@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import About from "./pages/About";
+import Footer from "./components/Footer/";
 
 
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <NavBar />
       <About />
+      <Footer />
     </div>
     
   )
