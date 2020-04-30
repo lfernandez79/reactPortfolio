@@ -1,0 +1,46 @@
+main {
+    border-style: hidden;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+h3 i {
+    color: rgb(54, 152, 212);
+    margin-right: 10px;
+}
+
+a {
+    color: black;
+}
+
+p {
+    line-height: 1em;
+    color: rgba(0, 0, 0, 0.473);
+    text-align: end;
+    font-size: 30px;
+    font-family: Abel;
+    
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#grayscale {
+  
+  border-radius: 40%;
+  box-shadow: 10px 10px 5px lightgrey;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+#grayscale:hover {
+filter: blur(0);
+  -webkit-filter: blur();
+}
