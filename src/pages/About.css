@@ -27,3 +27,20 @@ p {
     font-family: Abel;
     
 }
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#grayscale {
+  
+  border-radius: 40%;
+  box-shadow: 10px 10px 5px lightgrey;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+#grayscale:hover {
+filter: blur(0);
+  -webkit-filter: blur();
+}
