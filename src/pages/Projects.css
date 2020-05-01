@@ -1,4 +1,8 @@
 
+#view {
+    height: 50vw;
+}
+
 hr {
   border: 1; 
   height: 2px; 

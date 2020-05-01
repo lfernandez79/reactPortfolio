@@ -6,10 +6,10 @@ import "./Projects.css"
 
 function Projects() {
     return (
-       <div>
+       <div id="view">
         <hr></hr>
-            <h2 id="text3d" class="text-center">Team Projects</h2>
-        <hr></hr>   
+            <h2 id="text3d" className="text-center">Team Projects</h2>
+         
         <section className="container-lg my-3">
             
             <main className="row">

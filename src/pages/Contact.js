@@ -1,4 +1,5 @@
 import React from "react";
+import "./Contact.css";
 
 function Contact() {
     return (
@@ -19,7 +20,7 @@ function Contact() {
                 </div>
             </div>
 
-            <hr className="container mt-5"></hr>
+            
 
         </div>
     )

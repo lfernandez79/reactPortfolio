@@ -11,9 +11,13 @@ function App() {
   return (
     <div>
       <NavBar />
+      
       <About />
+      
       <Projects />
+      
       <Contact />
+      
       <Footer />
     </div>
     
