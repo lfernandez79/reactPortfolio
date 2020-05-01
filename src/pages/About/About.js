@@ -1,11 +1,11 @@
 import React from "react";
 import "./About.css";
-import PorImg from "./images/Leo.jpg"
+import PorImg from "../images/Leo.jpg"
 
 function About() {
     return (
         <div>
-            <section className="container mt-5 border-0">
+            <section id="view" className="container mt-5 border-0">
                 <main className="row">
                     <div className="col-md-12 pl-3 pt-3">
 

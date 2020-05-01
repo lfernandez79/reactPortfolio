@@ -1,16 +1,16 @@
 import React from "react";
-import TravelAdvisor from "./images/travelAdvisor.png"
-import Blog from "./images/blogProject.png"
-import Pizza from "./images/pizzaProject.png"
+import TravelAdvisor from "../images/travelAdvisor.png"
+import Blog from "../images/blogProject.png"
+import Pizza from "../images/pizzaProject.png"
 import "./Projects.css"
 
 function Projects() {
     return (
-       <div id="view">
+       <div>
         <hr></hr>
             <h2 id="text3d" className="text-center">Team Projects</h2>
          
-        <section className="container-lg my-3">
+        <article id="view" className="container-lg my-3">
             
             <main className="row">
                 <div className="col-md-12 pl-3 pt-3">
@@ -27,7 +27,7 @@ function Projects() {
                         </div>
                     </div>
             </main>
-        </section>
+        </article>
         </div> 
     );
 }
