@@ -1,3 +1,6 @@
+#view {
+    height: 45vw;
+}
 main {
     border-style: hidden;
 }
@@ -23,7 +26,7 @@ p {
     line-height: 1em;
     color: rgba(0, 0, 0, 0.473);
     text-align: end;
-    font-size: 30px;
+    font-size: 42px;
     font-family: Abel;
     
 }
