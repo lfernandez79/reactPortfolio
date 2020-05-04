@@ -1,6 +1,6 @@
 import React from "react";
 import { Wave } from "react-animated-text";
-import Scroll from "react-scroll";
+// import Scroll from "react-scroll";
 import "./style.css";
 
 function NavBar() {
