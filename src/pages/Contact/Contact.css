@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+h3, h5, a {
+    font-family: Amatic SC;
+    font-size: 2em;
+}
+
 a i {
     color: #0077b5;
     margin-left: 10px;
