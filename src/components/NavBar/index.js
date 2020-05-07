@@ -15,13 +15,13 @@ function NavBar() {
       <nav className="col-sm-12 col-md-6 py-3">
         <ul className="nav d-flex justify-content-around align-items-center">
           <li className="nav-item">
-            <a className="nav-link" href="#About"><Wave text="A b o u t" effect={"stretch"} effectChange={2.0}/></a>
+            <a className="nav-link" href="/"><Wave text="A b o u t" effect={"stretch"} effectChange={2.0}/></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="portfolio.html"><Wave text="P o r t f o l i o" effect="stretch" effectChange={2.0} /></a>
+            <a className="nav-link" href="/"><Wave text="P o r t f o l i o" effect="stretch" effectChange={2.0} /></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="contact.html"><Wave text="C o n t a c t" effect="stretch" effectChange={2.0} /></a>
+            <a className="nav-link" href="/"><Wave text="C o n t a c t" effect="stretch" effectChange={2.0} /></a>
           </li>
         </ul>
       </nav>
