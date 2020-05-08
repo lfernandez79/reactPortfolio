@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/reactPortfolio/static/css/main.4cef4f77.chunk.css",
+    "main.js": "/reactPortfolio/static/js/main.0a4babcf.chunk.js",
+    "main.js.map": "/reactPortfolio/static/js/main.0a4babcf.chunk.js.map",
+    "runtime-main.js": "/reactPortfolio/static/js/runtime-main.c00b2187.js",
+    "runtime-main.js.map": "/reactPortfolio/static/js/runtime-main.c00b2187.js.map",
+    "static/js/2.f9e3fc1c.chunk.js": "/reactPortfolio/static/js/2.f9e3fc1c.chunk.js",
+    "static/js/2.f9e3fc1c.chunk.js.map": "/reactPortfolio/static/js/2.f9e3fc1c.chunk.js.map",
+    "index.html": "/reactPortfolio/index.html",
+    "precache-manifest.4e7d3779a1e0cfeda5c572c161b1290f.js": "/reactPortfolio/precache-manifest.4e7d3779a1e0cfeda5c572c161b1290f.js",
+    "service-worker.js": "/reactPortfolio/service-worker.js",
+    "static/css/main.4cef4f77.chunk.css.map": "/reactPortfolio/static/css/main.4cef4f77.chunk.css.map",
+    "static/js/2.f9e3fc1c.chunk.js.LICENSE.txt": "/reactPortfolio/static/js/2.f9e3fc1c.chunk.js.LICENSE.txt",
+    "static/media/Leo.jpg": "/reactPortfolio/static/media/Leo.d9a856e6.jpg",
+    "static/media/blogProject.png": "/reactPortfolio/static/media/blogProject.fe95ab83.png",
+    "static/media/pizzaProject.png": "/reactPortfolio/static/media/pizzaProject.b7b7f3c6.png",
+    "static/media/travelAdvisor.png": "/reactPortfolio/static/media/travelAdvisor.bad1cc5f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c00b2187.js",
+    "static/js/2.f9e3fc1c.chunk.js",
+    "static/css/main.4cef4f77.chunk.css",
+    "static/js/main.0a4babcf.chunk.js"
+  ]
+}
