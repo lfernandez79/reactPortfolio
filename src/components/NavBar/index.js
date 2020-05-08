@@ -1,7 +1,8 @@
 import React from "react";
 import { Wave } from "react-animated-text";
-// import Scroll from "react-scroll";
+import { Link } from "react-scroll";
 import "./style.css";
+
 
 function NavBar() {
   return (
@@ -15,13 +16,13 @@ function NavBar() {
       <nav className="col-sm-12 col-md-6 py-3">
         <ul className="nav d-flex justify-content-around align-items-center">
           <li className="nav-item">
-            <a className="nav-link" href="/"><Wave text="A b o u t" effect={"stretch"} effectChange={2.0}/></a>
+            <Link to="About" duration={500} smooth={true}><a className="nav-link" href="/"><Wave text="A b o u t" effect={"stretch"} effectChange={2.0} /></a></Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/"><Wave text="P o r t f o l i o" effect="stretch" effectChange={2.0} /></a>
+            <Link to="Projtcs" duration={500} smooth={true}> <a className="nav-link" href="/"><Wave text="P o r t f o l i o" effect="stretch" effectChange={2.0} /></a></Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/"><Wave text="C o n t a c t" effect="stretch" effectChange={2.0} /></a>
+            <Link to="Contact" duration={500} smooth={true}> <a className="nav-link" href="/"><Wave text="C o n t a c t" effect="stretch" effectChange={2.0} /></a></Link>
           </li>
         </ul>
       </nav>

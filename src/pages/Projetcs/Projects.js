@@ -6,7 +6,7 @@ import "./Projects.css"
 
 function Projects() {
     return (
-       <div>
+       <div id="Projtcs">
         <hr></hr>
             <h2 id="text3d" className="text-center">Team Projects</h2>
          
