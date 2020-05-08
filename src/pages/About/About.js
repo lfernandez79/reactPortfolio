@@ -8,15 +8,13 @@ function About() {
             
                 <section id="About" className="container mt-5 border-0">
                     <main>
-                
-
                         <div className="row pt-2 px-3">
-                            <div className="col-sm-12 col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-4">
                                 <img id="grayscale" className="img-fluid d-flex align-items-md-stretch" src={PorImg} alt="LeoFernandez"></img>
                             </div>
 
-                            <div className="col-sm-12 col-md-6 col-lg-9 intro">
-                                <p>I'm a full stack developer
+                            <div className="col-md-6 col-lg-8 intro">
+                                <p className="mt-3">I'm a full stack developer
                                 I'm based in Dallas, TX. Beside coding, I enjoy spending time with my two girls. I love coffee,
                                 can't live without it. I also enjoy cooking, very relaxing if you ask me.</p>
 
