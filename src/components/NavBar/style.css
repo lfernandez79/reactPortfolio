@@ -23,3 +23,8 @@ li a {
     font-family: Amatic SC;
     font-size: 1.5rem;
 }
+
+h1 i {
+    color: rgb(54, 152, 212);
+    margin-right: 10px;
+}

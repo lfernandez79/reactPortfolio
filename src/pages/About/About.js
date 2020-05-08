@@ -24,7 +24,7 @@ function About() {
 
                                 <p>My skill range from HTML, CSS, Bootstrap, jQuery, Javascript, MySQL and
                                 some others that I'm still working on. I love to be part of the process where you are putting
-                                pieces together like a lego puzzle, then add any functionbality that you can think of, coding is
+                                pieces together like a lego puzzle, then add any functionality that you can think of, coding is
                                 unlimited!</p>
                             </div>
                         </div>
