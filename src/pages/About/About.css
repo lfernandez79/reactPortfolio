@@ -34,11 +34,11 @@ img:hover {
 
 #grayscale {
   
-  border-radius: 40%;
-  box-shadow: 10px 10px 5px lightgrey;
+  border-radius: 20%;
+  box-shadow: 5px 5px 5px lightgrey;
   /* Add the blur effect */
   filter: blur(8px);
-  -webkit-filter: blur(8px);
+  -webkit-filter: blur(10px);
 }
 #grayscale:hover {
 filter: blur(0);

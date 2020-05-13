@@ -8,3 +8,6 @@ hr {
   height: 2px; 
   background-image: linear-gradient(to right, #f0f0f0, #00b9ff, #59d941, #f0f0f0);
 }
+.btn-sm {
+  line-height: 0.8;
+}
