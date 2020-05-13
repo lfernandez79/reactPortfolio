@@ -7,7 +7,6 @@ import Projects from "./pages/Projetcs/Projects";
 import Contact from "./pages/Contact/Contact"
 
 
-
 function App() {
   return (
     <div>

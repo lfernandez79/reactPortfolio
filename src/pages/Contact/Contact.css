@@ -9,3 +9,7 @@ a i {
     color: #0077b5;
     margin-left: 10px;
 }
+
+.card {
+    background-color: transparent !important;
+}
