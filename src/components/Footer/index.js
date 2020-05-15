@@ -4,7 +4,9 @@ import "./style.css";
 function Footer() {
     return (
         <footer id="copyright">
-            <small>&copy; Copyright 2020</small>
+            <p>
+                <small>&copy; Copyright 2020</small> 
+            </p>
         </footer>
     )
 }

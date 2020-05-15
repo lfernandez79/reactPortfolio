@@ -11,3 +11,7 @@ hr {
 .btn-sm {
   line-height: 0.8;
 }
+
+.btn {
+  box-shadow: 3px 3px 3px lightgrey;
+}
