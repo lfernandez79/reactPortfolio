@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer id="copyright">
             <p>
-                <small>&copy; Copyright 2020</small> 
+                &copy; Copyright 2020 
             </p>
         </footer>
     )

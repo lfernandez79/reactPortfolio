@@ -10,9 +10,6 @@ function NavBar() {
 
       <div className="col-sm-12 col-md-6 py-2">
         <h1><i className="fas fa-laptop-code d-flex justify-content-around pt-3"></i></h1>
-        
-        
-
       </div>
 
       <nav className="col-sm-12 col-md-6 py-3">
