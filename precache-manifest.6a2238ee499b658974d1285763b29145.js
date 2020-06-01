@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0f801430f7569a741f8afda9b30bf44",
+    "revision": "39c0f327fa1644c94414c29f37baa3aa",
     "url": "/reactPortfolio/index.html"
   },
   {
-    "revision": "78241097c22710c8356b",
-    "url": "/reactPortfolio/static/css/main.aa1af7ea.chunk.css"
+    "revision": "8908e8b998f78c9bc3e8",
+    "url": "/reactPortfolio/static/css/main.ee3b9284.chunk.css"
   },
   {
     "revision": "17534e6e8da2c2ba7680",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactPortfolio/static/js/2.f9e3fc1c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "78241097c22710c8356b",
-    "url": "/reactPortfolio/static/js/main.9330fa82.chunk.js"
+    "revision": "8908e8b998f78c9bc3e8",
+    "url": "/reactPortfolio/static/js/main.da8c61cd.chunk.js"
   },
   {
     "revision": "f40f85759aed7178a9bd",
@@ -28,15 +28,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactPortfolio/static/media/Leo.d9a856e6.jpg"
   },
   {
-    "revision": "fe95ab8349c68aa6a102258a75f5ede6",
-    "url": "/reactPortfolio/static/media/blogProject.fe95ab83.png"
+    "revision": "1763e0850c2bf20c8827a96c6d050ac6",
+    "url": "/reactPortfolio/static/media/blogProject.1763e085.png"
   },
   {
-    "revision": "b7b7f3c670a4ca61797fd539edb29600",
-    "url": "/reactPortfolio/static/media/pizzaProject.b7b7f3c6.png"
+    "revision": "5d9e3418f4940251fbc29a2a5dc3f8b0",
+    "url": "/reactPortfolio/static/media/pizzaProject.5d9e3418.png"
   },
   {
-    "revision": "bad1cc5f68900bca3c674d781d571335",
-    "url": "/reactPortfolio/static/media/travelAdvisor.bad1cc5f.png"
+    "revision": "ee1419a7edabc523ffd3af115d671c80",
+    "url": "/reactPortfolio/static/media/travelAdvisor.ee1419a7.png"
   }
 ]);
