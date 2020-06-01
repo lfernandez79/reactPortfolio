@@ -5,7 +5,7 @@ import About from "./pages/About/About";
 import Footer from "./components/Footer/";
 import Projects from "./pages/Projetcs/Projects";
 import Contact from "./pages/Contact/Contact"
-// import Navigation from "./pages/Projetcs/Navigation"
+
 
 
 function App() {
@@ -18,9 +18,7 @@ function App() {
       <About />
       
       <Projects />
-      {/* <Navigation /> */}
 
-      
       <Contact />
       
       <Footer />
