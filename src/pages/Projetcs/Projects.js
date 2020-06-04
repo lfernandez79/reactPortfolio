@@ -16,34 +16,34 @@ function Projects() {
 
                 <main>                   
                     <div className="row pt-2 px-3">
-                        <div data-aos="fade-up" className="col-xs-12 col-md-6 col-lg-4">
+                        <div data-aos="fade-up" className="col-xs-12 col-md-6 col-lg-4 mt-4">
                             <a href="https://lfernandez79.github.io/project1/"><img className="d-flex img-fluid mb-2" src={TravelAdvisor} alt="TravelAdvisor"></img></a>
                             <div className="d-flex justify-content-around">
-                                <button type="button" className="btn btn-outline-dark btn-sm">Repository</button>                           
+                                                           
                             </div>
                         </div>
-                        <div data-aos="fade-down" className="col-xs-12 col-md-6 col-lg-4">
+                        <div data-aos="fade-down" className="col-xs-12 col-md-6 col-lg-4 mt-4">
                             <a href="https://project2-cody-gen-leo.herokuapp.com/"><img className="d-flex img-fluid mb-2" src={Blog} alt="BLog"></img></a>
                             <div className="d-flex justify-content-around">
-                                <button type="button" className="btn btn-outline-dark btn-sm">Repository</button>                              
+                                
                             </div>
                         </div>
-                        <div data-aos="fade-left" className="col-xs-12 col-md-6 col-lg-4">
+                        <div data-aos="fade-left" className="col-xs-12 col-md-6 col-lg-4 mt-4">
                             <a href="https://pizza-app-p3.herokuapp.com/"><img className="d-flex img-fluid mb-2" src={Pizza} alt="PizzaPage"></img></a>
                             <div className="d-flex justify-content-around">
-                                <button type="button" className="btn btn-outline-dark btn-sm">Repository</button>
+                                
                             </div>
                         </div>
-                        <div data-aos="fade-up" className="col-xs-12 col-md-6 col-lg-4 mt-3">
+                        <div data-aos="fade-up" className="col-xs-12 col-md-6 col-lg-4 mt-4">
                             <a href="https://lfernandez79.github.io/leoPortfolio/"><img className="d-flex img-fluid mb-2" src={Portfoliov1} alt="Static Portfolio"></img></a>
                             <div className="d-flex justify-content-around">
-                                <button type="button" className="btn btn-outline-dark btn-sm">Repository</button>
+                                
                             </div>
                         </div>
-                        <div data-aos="fade-down" className="col-xs-12 col-md-6 col-lg-4 mt-3">
+                        <div data-aos="fade-down" className="col-xs-12 col-md-6 col-lg-4 mt-4">
                             <a href="https://lfernandez79.github.io/reactPortfolio/"><img className="d-flex img-fluid mb-2" src={Portfolio} alt="React Portfolio"></img></a>
                             <div className="d-flex justify-content-around">
-                                <button type="button" className="btn btn-outline-dark btn-sm">Repository</button>
+                                
                             </div>
                         </div>
                     </div>
