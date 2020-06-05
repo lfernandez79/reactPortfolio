@@ -27,22 +27,30 @@ function Projects() {
                         <div data-aos="fade-up" className="container col-xs-12 col-md-6 col-lg-4 p-0">
                             <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor"></img>
                             <div className="overlay">
-                                <p className="text1">html, css, bootstrap, api, git</p>
-                                <p className="text2"><a href="https://lfernandez79.github.io/project1/" style={{ ...style.font, ...style.deco }}>Live </a>
+                                <p className="text1">Travel Advisor</p>
+                                <p className="text2">html, css, bootstrap, api, git</p>
+                                <p className="text3"><a href="https://lfernandez79.github.io/project1/" style={{ ...style.font, ...style.deco }}>Live </a>
                                     <a href="https://github.com/lfernandez79/project1" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
                             </div>
                         </div>
 
                         <div data-aos="fade-down" className="container col-xs-12 col-md-6 col-lg-4 p-0">
-                            <a href="https://project2-cody-gen-leo.herokuapp.com/"><img className="d-flex img-fluid" src={Blog} alt="BLog"></img></a>
+                            <img className="d-flex img-fluid" src={Blog} alt="BLog"></img>
                             <div className="overlay">
-                                <div className="text">Some text</div>
+                                <p className="text1">Restaurant Blog</p>
+                                <p className="text2" style={{fontSize: "1rem"}}>heroku, passportjs, mysql, travis, eslint, sequelized, express, nodejs, jquery, handlebars</p>
+                                <p className="text3"><a href="https://project2-cody-gen-leo.herokuapp.com/" style={{ ...style.font, ...style.deco }}>Live </a>
+                                    <a href="https://github.com/lfernandez79/project2" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
                             </div>
                         </div>
 
                         <div data-aos="fade-left" className="container col-xs-12 col-md-6 col-lg-4 p-0">
-                            <a href="https://pizza-app-p3.herokuapp.com/"><img className="d-flex img-fluid" src={Pizza} alt="PizzaPage"></img></a>
+                            <img className="d-flex img-fluid" src={Pizza} alt="PizzaPage"></img>
                             <div className="overlay">
+                            <p className="text1">Zalat Pizza</p>
+                            <p className="text2" style={{ fontSize: "1rem" }}>reacjs, mysql, passportjs, expressjs, nodejs</p>
+                                <p className="text3"><a href="https://pizza-app-p3.herokuapp.com/" style={{ ...style.font, ...style.deco }}>Live </a>
+                                <a href="https://github.com/lfernandez79/project3" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
                                 <div className="text">Some text</div>
                             </div>
                         </div>
