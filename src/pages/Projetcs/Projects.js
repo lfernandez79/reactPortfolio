@@ -6,27 +6,21 @@ import Portfoliov1 from "../images/Portfoliov1.0.png"
 import Portfolio from "../images/Portfoliov2.0.png"
 import "./Projects.css"
 
-
-
 function Projects() {
     return (
-        <div id="Projtcs">
-
-            <h2 id="text3d" className="text-center">Coding</h2>
-
+        <div>
+            <h2 className="text-center">Coding</h2>
+            
             <article id="view" className="container-lg my-3">
-
                 <main>
-
                     <div className="row pt-2 px-3">
-
                         <div data-aos="fade-up" className="container col-xs-12 col-md-6 col-lg-4 p-0">
                             <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor"></img>
                             <div className="overlay">
-                                <p style={{textAlign: "center"}}>Some Text</p>
-                                <p className="text"><a href="https://lfernandez79.github.io/project1/" style={{textDecoration: "none" }}>Live </a>
-                                <a href="https://lfernandez79.github.io/project1/" style={{textDecoration: "none" }}> Code</a></p> 
-                                
+                                <p style={{ textAlign: "center" }}>Some Text</p>
+                                <p className="text"><a href="https://lfernandez79.github.io/project1/" style={{ textDecoration: "none" }}>Live </a>
+                                    <a href="https://lfernandez79.github.io/project1/" style={{ textDecoration: "none" }}> Code</a></p>
+
                             </div>
                         </div>
 

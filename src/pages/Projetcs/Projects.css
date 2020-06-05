@@ -34,7 +34,7 @@ img {
  
 }
 
-.text {
+div .text {
   color: white;
   font-size: 20px;
   position: absolute;
