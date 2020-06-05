@@ -36,6 +36,8 @@ img {
 .text1  {
   color: black;
   position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
   top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

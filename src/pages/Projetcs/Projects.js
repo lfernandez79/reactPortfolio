@@ -27,9 +27,9 @@ function Projects() {
                         <div data-aos="fade-up" className="container col-xs-12 col-md-6 col-lg-4 p-0">
                             <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor"></img>
                             <div className="overlay">
-                                <p className="text1" style={style.font}>Some Text</p>
+                                <p className="text1">html, css, bootstrap, api, git</p>
                                 <p className="text2"><a href="https://lfernandez79.github.io/project1/" style={{ ...style.font, ...style.deco }}>Live </a>
-                                    <a href="https://lfernandez79.github.io/project1/" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
+                                    <a href="https://github.com/lfernandez79/project1" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
                             </div>
                         </div>
 
