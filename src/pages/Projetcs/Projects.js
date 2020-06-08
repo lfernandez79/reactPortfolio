@@ -56,16 +56,22 @@ function Projects() {
                         </div>
 
                         <div data-aos="fade-up" className="container col-xs-12 col-md-6 col-lg-4 p-0">
-                            <a href="https://lfernandez79.github.io/leoPortfolio/"><img className="d-flex img-fluid" src={Portfoliov1} alt="Static Portfolio"></img></a>
+                            <img className="d-flex img-fluid" src={Portfoliov1} alt="Static Portfolio"></img>
                             <div className="overlay">
-                                <div className="text">Some text</div>
+                                <p className="text1">Static Portfolio</p>
+                                <p className="text2" style={{ fontSize: "1rem" }}>html, css, bootstrap, javascript, aos,</p>
+                                <p className="text3"><a href="https://lfernandez79.github.io/leoPortfolio/" style={{ ...style.font, ...style.deco }}>Live </a>
+                                    <a href="https://github.com/lfernandez79/leoPortfolio" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
                             </div>
                         </div>
 
                         <div data-aos="fade-down" className="container col-xs-12 col-md-6 col-lg-4 p-0">
-                            <a href="https://lfernandez79.github.io/reactPortfolio/"><img className="d-flex img-fluid" src={Portfolio} alt="React Portfolio"></img></a>
+                            <img className="d-flex img-fluid" src={Portfolio} alt="React Portfolio"></img>
                             <div className="overlay">
-                                <div className="text">Some text</div>
+                                <p className="text1">React Portfolio</p>
+                                <p className="text2" style={{ fontSize: "1rem" }}>reactjs, vantajs, react-animated-text, router-dom</p>
+                                <p className="text3"><a href="https://lfernandez79.github.io/reactPortfolio/" style={{ ...style.font, ...style.deco }}>Live </a>
+                                    <a href="https://github.com/lfernandez79/reactPortfolio" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
                             </div>
                         </div>
 
