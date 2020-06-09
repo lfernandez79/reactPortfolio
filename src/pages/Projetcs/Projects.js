@@ -4,6 +4,7 @@ import Blog from "../images/blogProject.png"
 import Pizza from "../images/pizzaProject.png"
 import Portfoliov1 from "../images/Portfoliov1.0.png"
 import Portfolio from "../images/Portfoliov2.0.png"
+import Password from "../images/passwordGenerator.png"
 import "./Projects.css"
 
 const style = {
@@ -24,7 +25,7 @@ function Projects() {
                 <main>
                     <div className="row d-flex justify-content-around my-3">
 
-                        <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0">
+                        <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
                             <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor"></img>
                             <div className="overlay">
                                 <p className="text1">Travel Advisor</p>
@@ -34,7 +35,7 @@ function Projects() {
                             </div>
                         </div>
 
-                        <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0">
+                        <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
                             <img className="d-flex img-fluid" src={Blog} alt="BLog"></img>
                             <div className="overlay">
                                 <p className="text1">Restaurant Blog</p>
@@ -45,7 +46,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="row d-flex justify-content-around my-3">
-                        <div data-aos="fade-left" className="zoomOut col-xs-12 col-md-5 p-0">
+                        <div data-aos="fade-left" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
                             <img className="d-flex img-fluid" src={Pizza} alt="PizzaPage"></img>
                             <div className="overlay">
                             <p className="text1">Zalat Pizza</p>
@@ -56,7 +57,7 @@ function Projects() {
                             </div>
                         </div>
 
-                        <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0">
+                        <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
                             <img className="d-flex img-fluid" src={Portfoliov1} alt="Static Portfolio"></img>
                             <div className="overlay">
                                 <p className="text1">Static Portfolio</p>
@@ -67,7 +68,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="row d-flex justify-content-around my-3">
-                        <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0">
+                        <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
                             <img className="d-flex img-fluid" src={Portfolio} alt="React Portfolio"></img>
                             <div className="overlay">
                                 <p className="text1">React Portfolio</p>
@@ -76,6 +77,17 @@ function Projects() {
                                     <a href="https://github.com/lfernandez79/reactPortfolio" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
                             </div>
                         </div>
+                        
+                        <div data-aos="fade-left" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+                            <img className="d-flex img-fluid" src={Password} alt="passwordGenerator"></img>
+                            <div className="overlay">
+                                <p className="text1">Password Generator</p>
+                                <p className="text2">html, css, javascript, DOM</p>
+                                <p className="text3"><a href="https://lfernandez79.github.io/pwdGenerator/" style={{ ...style.font, ...style.deco }}>Live </a>
+                                    <a href="https://github.com/lfernandez79/pwdGenerator" style={{ ...style.font, ...style.deco }}> GitHub</a></p>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                 </main>
