@@ -25,7 +25,7 @@ function About() {
                             </div>
                         </div>
                     </main>
-                <hr></hr>
+                
                 <br />
                 </section>
             
