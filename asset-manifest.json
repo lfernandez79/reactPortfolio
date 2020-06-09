@@ -1,28 +1,29 @@
 {
   "files": {
     "main.css": "/reactPortfolio/static/css/main.471b36a4.chunk.css",
-    "main.js": "/reactPortfolio/static/js/main.ee4493cb.chunk.js",
-    "main.js.map": "/reactPortfolio/static/js/main.ee4493cb.chunk.js.map",
+    "main.js": "/reactPortfolio/static/js/main.52c16986.chunk.js",
+    "main.js.map": "/reactPortfolio/static/js/main.52c16986.chunk.js.map",
     "runtime-main.js": "/reactPortfolio/static/js/runtime-main.c00b2187.js",
     "runtime-main.js.map": "/reactPortfolio/static/js/runtime-main.c00b2187.js.map",
-    "static/js/2.5340028a.chunk.js": "/reactPortfolio/static/js/2.5340028a.chunk.js",
-    "static/js/2.5340028a.chunk.js.map": "/reactPortfolio/static/js/2.5340028a.chunk.js.map",
+    "static/js/2.ca83aa65.chunk.js": "/reactPortfolio/static/js/2.ca83aa65.chunk.js",
+    "static/js/2.ca83aa65.chunk.js.map": "/reactPortfolio/static/js/2.ca83aa65.chunk.js.map",
     "index.html": "/reactPortfolio/index.html",
-    "precache-manifest.c4a93014302af91e2a4abb7e10fd66da.js": "/reactPortfolio/precache-manifest.c4a93014302af91e2a4abb7e10fd66da.js",
+    "precache-manifest.d4cf6b12987cb0803d34e60d1767fd2c.js": "/reactPortfolio/precache-manifest.d4cf6b12987cb0803d34e60d1767fd2c.js",
     "service-worker.js": "/reactPortfolio/service-worker.js",
     "static/css/main.471b36a4.chunk.css.map": "/reactPortfolio/static/css/main.471b36a4.chunk.css.map",
-    "static/js/2.5340028a.chunk.js.LICENSE.txt": "/reactPortfolio/static/js/2.5340028a.chunk.js.LICENSE.txt",
+    "static/js/2.ca83aa65.chunk.js.LICENSE.txt": "/reactPortfolio/static/js/2.ca83aa65.chunk.js.LICENSE.txt",
     "static/media/Leo.jpg": "/reactPortfolio/static/media/Leo.d9a856e6.jpg",
     "static/media/Portfoliov1.0.png": "/reactPortfolio/static/media/Portfoliov1.0.9c0c1759.png",
     "static/media/Portfoliov2.0.png": "/reactPortfolio/static/media/Portfoliov2.0.c5328b16.png",
     "static/media/blogProject.png": "/reactPortfolio/static/media/blogProject.1763e085.png",
+    "static/media/passwordGenerator.png": "/reactPortfolio/static/media/passwordGenerator.7b7c0a1d.png",
     "static/media/pizzaProject.png": "/reactPortfolio/static/media/pizzaProject.5d9e3418.png",
     "static/media/travelAdvisor.png": "/reactPortfolio/static/media/travelAdvisor.ee1419a7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c00b2187.js",
-    "static/js/2.5340028a.chunk.js",
+    "static/js/2.ca83aa65.chunk.js",
     "static/css/main.471b36a4.chunk.css",
-    "static/js/main.ee4493cb.chunk.js"
+    "static/js/main.52c16986.chunk.js"
   ]
 }
