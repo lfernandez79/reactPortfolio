@@ -16,6 +16,7 @@ function Welcome() {
           </h1>
           <h2 className="text-center">
             Full Stack
+            {" "}
             <span><b>|</b></span>
             {" "}
             Frontend Web Developer
