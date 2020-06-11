@@ -21,11 +21,14 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "CI=true react-scripts test --env=jsdom",
+    "test:coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "testlint": "npm run lint",
     "lint": "eslint --quiet .",
-    "fix": "eslint --fix ."
+    "fix": "eslint --fix .",
+    "postlint": "echo ✅ lint valid"
+    
   },
   "browserslist": {
     "production": [
