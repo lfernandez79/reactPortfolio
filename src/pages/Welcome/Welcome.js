@@ -19,7 +19,7 @@ function Welcome() {
             {" "}
             <span><b>|</b></span>
             {" "}
-            Frontend Web Developer
+            Frontend Web Developer 2
           </h2>
         </div>
       </div>
