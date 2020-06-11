@@ -9,7 +9,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $travisCI-GithubPages
+  github_token: $TRAVISCIGITHUBPAGES
   keep_history: true
   local_dir: build
   on:
