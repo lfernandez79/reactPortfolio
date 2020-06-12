@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/reactPortfolio/static/css/main.471b36a4.chunk.css",
-    "main.js": "/reactPortfolio/static/js/main.0b0f3fc1.chunk.js",
-    "main.js.map": "/reactPortfolio/static/js/main.0b0f3fc1.chunk.js.map",
+    "main.css": "/reactPortfolio/static/css/main.327461ec.chunk.css",
+    "main.js": "/reactPortfolio/static/js/main.2b360cc5.chunk.js",
+    "main.js.map": "/reactPortfolio/static/js/main.2b360cc5.chunk.js.map",
     "runtime-main.js": "/reactPortfolio/static/js/runtime-main.c00b2187.js",
     "runtime-main.js.map": "/reactPortfolio/static/js/runtime-main.c00b2187.js.map",
-    "static/js/2.ca83aa65.chunk.js": "/reactPortfolio/static/js/2.ca83aa65.chunk.js",
-    "static/js/2.ca83aa65.chunk.js.map": "/reactPortfolio/static/js/2.ca83aa65.chunk.js.map",
+    "static/js/2.43c1bffa.chunk.js": "/reactPortfolio/static/js/2.43c1bffa.chunk.js",
+    "static/js/2.43c1bffa.chunk.js.map": "/reactPortfolio/static/js/2.43c1bffa.chunk.js.map",
     "index.html": "/reactPortfolio/index.html",
-    "precache-manifest.6e4d868b1c7d97f33bf093f07cc85f31.js": "/reactPortfolio/precache-manifest.6e4d868b1c7d97f33bf093f07cc85f31.js",
+    "precache-manifest.3f8b480be6b9ca8a6a209bad5d11c5d1.js": "/reactPortfolio/precache-manifest.3f8b480be6b9ca8a6a209bad5d11c5d1.js",
     "service-worker.js": "/reactPortfolio/service-worker.js",
-    "static/css/main.471b36a4.chunk.css.map": "/reactPortfolio/static/css/main.471b36a4.chunk.css.map",
-    "static/js/2.ca83aa65.chunk.js.LICENSE.txt": "/reactPortfolio/static/js/2.ca83aa65.chunk.js.LICENSE.txt",
+    "static/css/main.327461ec.chunk.css.map": "/reactPortfolio/static/css/main.327461ec.chunk.css.map",
+    "static/js/2.43c1bffa.chunk.js.LICENSE.txt": "/reactPortfolio/static/js/2.43c1bffa.chunk.js.LICENSE.txt",
     "static/media/Leo.jpg": "/reactPortfolio/static/media/Leo.d9a856e6.jpg",
     "static/media/Portfoliov1.0.png": "/reactPortfolio/static/media/Portfoliov1.0.9c0c1759.png",
     "static/media/Portfoliov2.0.png": "/reactPortfolio/static/media/Portfoliov2.0.c5328b16.png",
+    "static/media/TravisCI-Mascot-2.png": "/reactPortfolio/static/media/TravisCI-Mascot-2.05e0a258.png",
     "static/media/blogProject.png": "/reactPortfolio/static/media/blogProject.1763e085.png",
     "static/media/passwordGenerator.png": "/reactPortfolio/static/media/passwordGenerator.7b7c0a1d.png",
     "static/media/pizzaProject.png": "/reactPortfolio/static/media/pizzaProject.5d9e3418.png",
@@ -22,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c00b2187.js",
-    "static/js/2.ca83aa65.chunk.js",
-    "static/css/main.471b36a4.chunk.css",
-    "static/js/main.0b0f3fc1.chunk.js"
+    "static/js/2.43c1bffa.chunk.js",
+    "static/css/main.327461ec.chunk.css",
+    "static/js/main.2b360cc5.chunk.js"
   ]
 }

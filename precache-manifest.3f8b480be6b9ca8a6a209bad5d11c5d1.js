@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c20ef1374918ebbc738e039f735c2d7a",
+    "revision": "d958c23dce8d7b5288af8167197d16d8",
     "url": "/reactPortfolio/index.html"
   },
   {
-    "revision": "aec766f6a21c477aad1e",
-    "url": "/reactPortfolio/static/css/main.471b36a4.chunk.css"
+    "revision": "2290ba491e1d84549449",
+    "url": "/reactPortfolio/static/css/main.327461ec.chunk.css"
   },
   {
-    "revision": "becd4804b694e622f418",
-    "url": "/reactPortfolio/static/js/2.ca83aa65.chunk.js"
+    "revision": "730918b89ffdd74c4243",
+    "url": "/reactPortfolio/static/js/2.43c1bffa.chunk.js"
   },
   {
     "revision": "40158217dcba29c41bf6c1afe3c208d6",
-    "url": "/reactPortfolio/static/js/2.ca83aa65.chunk.js.LICENSE.txt"
+    "url": "/reactPortfolio/static/js/2.43c1bffa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aec766f6a21c477aad1e",
-    "url": "/reactPortfolio/static/js/main.0b0f3fc1.chunk.js"
+    "revision": "2290ba491e1d84549449",
+    "url": "/reactPortfolio/static/js/main.2b360cc5.chunk.js"
   },
   {
     "revision": "f40f85759aed7178a9bd",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c5328b166a06556d10ce18d89658db3d",
     "url": "/reactPortfolio/static/media/Portfoliov2.0.c5328b16.png"
+  },
+  {
+    "revision": "05e0a25826cabd8cd4ad265f9e47b0b5",
+    "url": "/reactPortfolio/static/media/TravisCI-Mascot-2.05e0a258.png"
   },
   {
     "revision": "1763e0850c2bf20c8827a96c6d050ac6",
