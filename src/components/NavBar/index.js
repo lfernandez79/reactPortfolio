@@ -1,18 +1,20 @@
 import React from "react";
 import { Wave } from "react-animated-text";
 import { Link } from "react-scroll";
+import TravisCI from "../../pages/images/TravisCI-Mascot-2.png"
 import "./style.css";
 
 
 function NavBar() {
   return (
-    <header className="row">
+    <header className="row py-3">
 
-      <div className="col-sm-12 col-md-6 py-2">
-        <h1><i className="fas fa-laptop-code d-flex justify-content-around pt-3" /></h1>
+      <div className="col-sm-12 col-md-6">
+        <a href="https://travis-ci.com/github/lfernandez79/reactPortfolio"><img src={TravisCI} style={{ width: "7%" }} alt="TravisCI" /></a>
+        <h3>Travis CI</h3>
       </div>
 
-      <nav className="col-sm-12 col-md-6 py-3">
+      <nav className="col-sm-12 col-md-6">
         <ul className="nav d-flex justify-content-around align-items-center">
           <li className="nav-item">
             <Link to="About" duration={500} smooth className="nav-link" href="/"><Wave text="A b o u t" effect="stretch" effectChange={2.0} /></Link>
