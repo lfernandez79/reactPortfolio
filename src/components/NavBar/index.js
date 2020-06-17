@@ -1,7 +1,7 @@
 import React from "react";
 import { Wave } from "react-animated-text";
 import { Link } from "react-scroll";
-import TravisCI from "../../pages/images/TravisCI-Mascot-2.png"
+import TravisCI from "../../pages/images/TravisCI-Mascot-2.png";
 import "./style.css";
 
 const style = {
