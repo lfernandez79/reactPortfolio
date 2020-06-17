@@ -11,7 +11,6 @@ function Welcome() {
             <br />
             My name is
             <br />
-            {" "}
             Leo
           </h1>
           <h2 className="text-center">

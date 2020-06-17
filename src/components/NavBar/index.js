@@ -4,14 +4,24 @@ import { Link } from "react-scroll";
 import TravisCI from "../../pages/images/TravisCI-Mascot-2.png"
 import "./style.css";
 
+const style = {
+
+  removeUnderline: {
+    textDecoration: "none",
+  },
+};
 
 function NavBar() {
   return (
     <header className="row py-3">
 
       <div className="col-sm-12 col-md-6">
-        <a href="https://travis-ci.com/github/lfernandez79/reactPortfolio"><img src={TravisCI} style={{ width: "7%" }} alt="TravisCI" /></a>
-        <h3>Travis CI</h3>
+        <a className="d-flex justify-content-center" href="https://travis-ci.com/github/lfernandez79/reactPortfolio" style={style.removeUnderline}>
+          <img id="radius" src={TravisCI} style={{ width: "7%" }} alt="TravisCI" />
+          <span>
+            &nbsp; Travis CI
+          </span>
+        </a>
       </div>
 
       <nav className="col-sm-12 col-md-6">
