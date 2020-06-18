@@ -27,7 +27,6 @@
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
     "postlint": "echo ✅ lint valid"
-    
   },
   "browserslist": {
     "production": [

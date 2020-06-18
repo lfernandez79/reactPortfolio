@@ -29,7 +29,7 @@ function Projects() {
               <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor" />
               <div className="overlay">
                 <p className="text1">Travel Advisor</p>
-                <p className="text2">html, css, bootstrap, api, git</p>
+                <p className="text2">html, css, bootstrap, api, git, jquery</p>
                 <p className="text3">
                   <a href="https://lfernandez79.github.io/project1/" style={{ ...style.font, ...style.deco }}>Live </a>
                   <a href="https://github.com/lfernandez79/project1" style={{ ...style.font, ...style.deco }}> GitHub</a>
