@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "testlint": "npm run lint",
-    "lint": "eslint --quiet .",
+    "lint": "eslint --quiet.",
     "fix": "eslint --fix .",
     "postlint": "echo ✅ lint valid"
   },

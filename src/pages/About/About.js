@@ -9,6 +9,7 @@ function About() {
     <div style={{ background: "none" }}>
 
       <section id="About" className="container mt-5 border-0">
+        <hr />
         <main>
           <div className="row pt-2 px-3">
             <div className="col-md-6 col-lg-4">
@@ -23,18 +24,19 @@ function About() {
               </p>
 
               <p>
-                My skill range from HTML, CSS, Bootstrap, jQuery, Javascript, MySQL and
-                some others that I'm still working on. I love to be part of the process where you are putting
+                My skill range from HTML, CSS, Bootstrap, jQuery, Javascript, MySQL, MongoDB to ReactJS and
+                many more that I will forever be educating myself on :)
+              </p>
+              <p>
+                I love to be part of the process where you are putting
                 pieces together like a lego puzzle, then add any functionality that you can think of, coding is
                 unlimited!
               </p>
             </div>
           </div>
         </main>
-
         <br />
       </section>
-
     </div>
   );
 }

@@ -13,19 +13,20 @@ const style = {
 
 function NavBar() {
   return (
-    <header className="row py-3">
+    <header className="row align-items-center py-3">
 
       <div className="col-sm-12 col-md-6">
         <a className="d-flex justify-content-center" href="https://travis-ci.com/github/lfernandez79/reactPortfolio" style={style.removeUnderline}>
-          <img id="radius" src={TravisCI} style={{ width: "7%" }} alt="TravisCI" />
+          <img id="radius" src={TravisCI} style={{ width: "5%", height: "5%" }} alt="TravisCI" />
           <span>
-            &nbsp; Travis CI
+            &nbsp; Click Me!
           </span>
         </a>
+
       </div>
 
       <nav className="col-sm-12 col-md-6">
-        <ul className="nav d-flex justify-content-around align-items-center">
+        <ul className="nav d-flex justify-content-around">
           <li className="nav-item">
             <Link to="About" duration={500} smooth className="nav-link" href="/"><Wave text="A b o u t" effect="stretch" effectChange={2.0} /></Link>
           </li>
@@ -36,6 +37,7 @@ function NavBar() {
             <Link to="Contact" duration={500} smooth className="nav-link" href="/"><Wave text="C o n t a c t" effect="stretch" effectChange={2.0} /></Link>
           </li>
         </ul>
+
       </nav>
 
     </header>
