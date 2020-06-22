@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
 
-li {
+li, span {
     font-family: Amatic SC;
-    font-size: 1rem;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-h1 i {
-    color: rgb(238, 135, 76);
-    margin-right: 10px;
-}
 #radius {
   border-radius: 50%;
 }

@@ -18,10 +18,12 @@ const style = {
 
 function Projects() {
   return (
-    <div id="Projtcs">
+    <div id="Projtcs" className="container">
+      <hr />
       <h2 className="text-center">Coding</h2>
 
-      <article id="view" className="container my-3">
+      <article id="view" className="my-3">
+
         <main>
           <div className="row d-flex justify-content-around my-3">
 
