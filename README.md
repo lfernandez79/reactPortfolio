@@ -3,6 +3,9 @@
 
 My portfolio is mobile-friendly, power by **reactJS**, fully automated with **TravisCI** and test coverage by **Jest** and **Eslint**.
 
+[Check it out!](https://lfernandez79.github.io/reactPortfolio/)
+--
+
 ## Tech
 
 This portfolio uses these additional technologies:
