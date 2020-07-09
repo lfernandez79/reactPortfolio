@@ -1,5 +1,7 @@
 # ReactJS Portfolio
-![Travis (.com)](https://img.shields.io/travis/com/lfernandez79/reactPortfolio?logo=travis) ![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
+[![Build Status](https://travis-ci.com/lfernandez79/reactPortfolio.svg?branch=master)](https://travis-ci.com/lfernandez79/reactPortfolio)
 
 My portfolio is mobile-friendly, power by **reactJS**, fully automated with **TravisCI** and test coverage by **Jest** and **Eslint**.
 
