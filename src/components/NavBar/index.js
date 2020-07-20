@@ -19,7 +19,7 @@ function NavBar() {
         <a className="d-flex justify-content-center" href="https://travis-ci.com/github/lfernandez79/reactPortfolio" style={style.removeUnderline}>
           <img id="radius" src={TravisCI} style={{ width: "5%", height: "5%" }} alt="TravisCI" />
           <span>
-            &nbsp; Click Me!
+            &nbsp; CI/CD!
           </span>
         </a>
 
