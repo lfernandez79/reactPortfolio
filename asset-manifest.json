@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/reactPortfolio/static/css/main.b975e05a.chunk.css",
-    "main.js": "/reactPortfolio/static/js/main.83370f39.chunk.js",
-    "main.js.map": "/reactPortfolio/static/js/main.83370f39.chunk.js.map",
+    "main.css": "/reactPortfolio/static/css/main.e7180260.chunk.css",
+    "main.js": "/reactPortfolio/static/js/main.beada260.chunk.js",
+    "main.js.map": "/reactPortfolio/static/js/main.beada260.chunk.js.map",
     "runtime-main.js": "/reactPortfolio/static/js/runtime-main.c00b2187.js",
     "runtime-main.js.map": "/reactPortfolio/static/js/runtime-main.c00b2187.js.map",
-    "static/js/2.43c1bffa.chunk.js": "/reactPortfolio/static/js/2.43c1bffa.chunk.js",
-    "static/js/2.43c1bffa.chunk.js.map": "/reactPortfolio/static/js/2.43c1bffa.chunk.js.map",
+    "static/js/2.ef05c103.chunk.js": "/reactPortfolio/static/js/2.ef05c103.chunk.js",
+    "static/js/2.ef05c103.chunk.js.map": "/reactPortfolio/static/js/2.ef05c103.chunk.js.map",
     "index.html": "/reactPortfolio/index.html",
-    "precache-manifest.471465d69b617a59b00c4d9f8cc18f03.js": "/reactPortfolio/precache-manifest.471465d69b617a59b00c4d9f8cc18f03.js",
+    "precache-manifest.fb26f03217caca2bc0496f41e580f447.js": "/reactPortfolio/precache-manifest.fb26f03217caca2bc0496f41e580f447.js",
     "service-worker.js": "/reactPortfolio/service-worker.js",
-    "static/css/main.b975e05a.chunk.css.map": "/reactPortfolio/static/css/main.b975e05a.chunk.css.map",
-    "static/js/2.43c1bffa.chunk.js.LICENSE.txt": "/reactPortfolio/static/js/2.43c1bffa.chunk.js.LICENSE.txt",
+    "static/css/main.e7180260.chunk.css.map": "/reactPortfolio/static/css/main.e7180260.chunk.css.map",
+    "static/js/2.ef05c103.chunk.js.LICENSE.txt": "/reactPortfolio/static/js/2.ef05c103.chunk.js.LICENSE.txt",
     "static/media/Leo.jpg": "/reactPortfolio/static/media/Leo.d9a856e6.jpg",
     "static/media/Portfoliov1.0.png": "/reactPortfolio/static/media/Portfoliov1.0.9c0c1759.png",
     "static/media/Portfoliov2.0.png": "/reactPortfolio/static/media/Portfoliov2.0.c5328b16.png",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c00b2187.js",
-    "static/js/2.43c1bffa.chunk.js",
-    "static/css/main.b975e05a.chunk.css",
-    "static/js/main.83370f39.chunk.js"
+    "static/js/2.ef05c103.chunk.js",
+    "static/css/main.e7180260.chunk.css",
+    "static/js/main.beada260.chunk.js"
   ]
 }
