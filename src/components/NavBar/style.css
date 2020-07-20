@@ -2,9 +2,9 @@
 
 
 li, span {
-    font-family: Amatic SC;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 #radius {

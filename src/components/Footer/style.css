@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
 footer {
   background: linear-gradient(to right, white, lightgray);
   animation: gradient 15s ease infinite;
@@ -6,6 +8,7 @@ footer {
 
 footer p {
   text-align: center;
+  font-family: "Amatic SC";
 }
 
 
