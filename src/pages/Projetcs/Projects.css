@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
 .zoomOut {
   position: relative;
   width: 100%;
+}
+h2 {
+  font-family: "Amatic SC";
+  
 }
 
 img {
@@ -49,9 +55,9 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 .text2  {
-  color: black;
   position: absolute;
   font-size: 1em;
   font-weight: bold;
@@ -64,7 +70,6 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
 }
 
 .text3 {
-  
   position: absolute;
   top: 80%;
   left: 50%;
@@ -72,4 +77,6 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  font-size: 1em;
+  
 }
