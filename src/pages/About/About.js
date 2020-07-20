@@ -24,8 +24,8 @@ function About() {
               </p>
 
               <p>
-                My skill range from HTML, CSS, Bootstrap, jQuery, Javascript, MySQL, MongoDB to ReactJS and
-                many more that I will forever be educating myself on :)
+                My skill range from HTML, CSS, Bootstrap, jQuery, Javascript, MySQL, MongoDB to ReactJS
+                also recently added CI/CD pipeline and Jest for testing.
               </p>
               <p>
                 I love to be part of the process where you are putting
