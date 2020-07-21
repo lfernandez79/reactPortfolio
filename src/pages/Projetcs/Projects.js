@@ -1,4 +1,5 @@
 import React from "react";
+ 
 import TravelAdvisor from "../images/travelAdvisor.png";
 import Blog from "../images/blogProject.png";
 import Pizza from "../images/pizzaProject.png";
@@ -6,6 +7,7 @@ import Portfoliov1 from "../images/Portfoliov1.0.png";
 import Portfolio from "../images/Portfoliov2.0.png";
 import Password from "../images/passwordGenerator.png";
 import "./Projects.css";
+
 
 const style = {
   deco: {
@@ -17,12 +19,12 @@ function Projects() {
   return (
     <div id="Projtcs" className="container">
       <hr />
-      <h2 className="text-center">Coding hover each project for details!</h2>
+      <h3 className="text-center">Hover each project for details!</h3>
 
       <article id="view" className="my-3">
 
         <main>
-          <div className="row d-flex justify-content-around my-3">
+          <div className="row d-flex justify-content-around my-5">
 
             <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor" />
@@ -49,8 +51,8 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="row d-flex justify-content-around my-3">
-            <div data-aos="fade-left" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+          <div className="row d-flex justify-content-around my-5">
+            <div data-aos="fade-right" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Pizza} alt="PizzaPage" />
               <div className="overlay">
                 <p className="text1">Zalat Pizza</p>
@@ -62,7 +64,7 @@ function Projects() {
               </div>
             </div>
 
-            <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+            <div data-aos="fade-left" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Portfoliov1} alt="Static Portfolio" />
               <div className="overlay">
                 <p className="text1">Static Portfolio</p>
@@ -74,8 +76,8 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="row d-flex justify-content-around my-3">
-            <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+          <div className="row d-flex justify-content-around my-5">
+            <div data-aos="fade-left" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Portfolio} alt="React Portfolio" />
               <div className="overlay">
                 <p className="text1">React Portfolio</p>
@@ -87,7 +89,7 @@ function Projects() {
               </div>
             </div>
 
-            <div data-aos="fade-left" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+            <div data-aos="fade-right" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Password} alt="passwordGenerator" />
               <div className="overlay">
                 <p className="text1">Password Generator</p>
@@ -105,5 +107,7 @@ function Projects() {
       </article>
     </div>
   );
+  
 }
+
 export default Projects;
