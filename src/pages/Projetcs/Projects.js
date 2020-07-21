@@ -29,9 +29,9 @@ function Projects() {
             <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor" />
               <div className="overlay">
-                <p className="text1">Travel Advisor</p>
+                <p className="text1">Travel Advisor</p >
                 
-                <p className="text2">Website to search airport information, world time and currency exchange, tech used: html, css, bootstrap, api, git, jquery</p>
+              <p className="text2">Website to search airport information, world time and currency exchange, tech used: html, css, bootstrap, api, git, jquery</p>
                 <p className="text3">
                   <a href="https://lfernandez79.github.io/project1/" style={style.deco}>Deployed </a>
                   <a href="https://github.com/lfernandez79/project1" style={style.deco}> GitHub</a>

@@ -10,7 +10,7 @@ function Contact() {
       <div className="m-5">
         <hr />
         <div className="row">
-          <div className="col-sm-12 col-md-12 card w-75 border-0">
+          <div className="col-sm-12 col-md-12 card w-75 border-0" >
             <div className="card-body">
 
               <br />
