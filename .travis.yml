@@ -6,7 +6,6 @@ cache:
   - node_modules
 script:
   - npm run testlint 
-  - npm run fix 
   - npm run build
   - npm test
 deploy:
