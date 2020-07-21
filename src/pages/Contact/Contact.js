@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div id="Contact">
 
-      <div className="container mt-5">
+      <div className="m-5">
         <hr />
         <div className="row">
           <div className="col-sm-12 col-md-12 card w-75 border-0">
