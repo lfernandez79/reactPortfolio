@@ -6,6 +6,7 @@ import Pizza from "../images/pizzaProject.png";
 import Portfoliov1 from "../images/Portfoliov1.0.png";
 import Portfolio from "../images/Portfoliov2.0.png";
 import Password from "../images/passwordGenerator.png";
+import Burger from "../images/eatBurger.png";
 import "./Projects.css";
 
 
@@ -100,7 +101,20 @@ function Projects() {
                 </p>
               </div>
             </div>
+          </div>
 
+          <div className="row d-flex justify-content-around my-5">
+            <div data-aos="zoom-out" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+              <img className="d-flex img-fluid" src={Burger} alt="Eat that Burger" />
+              <div className="overlay">
+                <p className="text1">Pick a Burger</p>
+                <p className="text2">Burger website where you can add burgers to your list, then Devour and delete, I used: JQuery, JavaScript, MySQL, ORM, Handlebars, ExpressJS, Heroku </p>
+                <p className="text3">
+                  <a href="https://pacific-harbor-91315.herokuapp.com/" style={style.deco}>Deployed </a>
+                  <a href="https://github.com/lfernandez79/burgerLogger" style={style.deco}> GitHub</a>
+                </p>
+              </div>
+            </div>
           </div>
 
         </main>
