@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from "react";
+import NetlifyForm from "./NetlifyForms";
 import "./Contact.css";
 
 
@@ -23,6 +24,9 @@ function Contact() {
               </a>
               <a className="d-flex flex-row-reverse" href="https://www.linkedin.com/in/joseleonardofernandez/"><i className="fab fa-linkedin-in fa-1x pt-2" /></a>
               <a className="d-flex flex-row-reverse mt-1" href="https://github.com/lfernandez79"><i className="fab fa-github fa-1x pt-2" /></a>
+
+              <NetlifyForm />
+
             </div>
           </div>
         </div>
