@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
-h1, h2  {
-    font-family: 'Amatic SC', cursive;
-    color: white;
+
+h1  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: black;
     text-shadow: 2px 2px 4px #000000;
+}
+span {
+    font-size: 2rem;
 }

@@ -13,14 +13,9 @@ function Welcome() {
             My name is
             <br />
             Leo
+            <br />
+            <span>Full Stack, Frontend Web Developer</span>
           </h1>
-          <h2 className="text-center">
-            Full Stack
-            {" "}
-            <span><b>|</b></span>
-            {" "}
-            Frontend Web Developer
-          </h2>
         </div>
       </div>
 
