@@ -28,13 +28,13 @@ function NavBar() {
       <nav className="col-sm-12 col-md-6">
         <ul className="nav d-flex justify-content-around">
           <li className="nav-item">
-            <Link to="About" duration={500} smooth className="nav-link" href="/"><Wave text="A b o u t" effect="stretch" effectChange={2.0} /></Link>
+            <Link to="About" duration={500} smooth className="nav-link" href="/"><Wave text="About" effect="stretch" effectChange={2.0} /></Link>
           </li>
           <li className="nav-item">
-            <Link to="Projtcs" duration={500} smooth className="nav-link" href="/"><Wave text="P o r t f o l i o" effect="stretch" effectChange={2.0} /></Link>
+            <Link to="Projtcs" duration={500} smooth className="nav-link" href="/"><Wave text="Portfolio" effect="stretch" effectChange={2.0} /></Link>
           </li>
           <li className="nav-item">
-            <Link to="Contact" duration={500} smooth className="nav-link" href="/"><Wave text="C o n t a c t" effect="stretch" effectChange={2.0} /></Link>
+            <Link to="Contact" duration={500} smooth className="nav-link" href="/"><Wave text="Contact" effect="stretch" effectChange={2.0} /></Link>
           </li>
         </ul>
 
