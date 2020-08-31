@@ -1,12 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
 
 .zoomOut {
   position: relative;
   width: 100%;
-}
-h2 {
-  font-family: "Amatic SC";
-  
 }
 
 img {
@@ -55,22 +51,23 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 300;
 }
 .text2  {
   position: absolute;
   font-size: 15px;
-  font-weight: 700;
-  font-family: fantasy;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  color: grey;
 }
 
-.text3 {
+.text3  {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -79,5 +76,6 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 1em;
+  font-weight: 300;
   
 }
