@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
 
-.text-center {
+div h3 {
   font-family: 'Open Sans', sans-serif;
   color: grey;
   font-weight: 300;
-
+  
 }
 
 .zoomOut {
@@ -37,7 +37,7 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   -webkit-transition: .3s ease;
   transition: .4s ease;
   border-radius: 3%;
-  
+  opacity: .9;
   
 }
 
@@ -63,7 +63,7 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
 .text2  {
   position: absolute;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   top: 50%;
   left: 50%;
@@ -82,7 +82,7 @@ div p a  {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   color: #B84E14;

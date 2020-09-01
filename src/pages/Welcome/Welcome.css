@@ -1,12 +1,12 @@
 
 
-h1  {
+div h1 {
     font-family: 'Open Sans', sans-serif;
     color: grey;
-    text-shadow: 2px 2px 4px #000000;
-}
-h1 span {
-    font-size: 2rem;
     text-shadow: 2px 2px 4px grey;
+}
+div h1 span {
+    font-size: 2rem;
+    text-shadow: 2px 2px 3px grey;
 }
 

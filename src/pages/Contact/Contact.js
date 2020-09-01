@@ -8,8 +8,7 @@ function Contact() {
   return (
     <div id="Contact">
 
-      <div className="m-5">
-        <hr />
+      <div className="">
         <div className="row">
           <div className="col-sm-12 col-md-12 card w-75 border-0">
             <div className="card-body">
@@ -19,13 +18,16 @@ function Contact() {
               <h5 className="card-text">Let create something awesome together, I would love to be part of your project, solution.</h5>
               <a href="mailto:lfernandez79@gmail.com?subject=Hello%20again!">
                 This is my email
-                <strong>lfernandez79@gmail</strong>
+                <strong> lfernandez79@gmail</strong>
                 , please contact me!
               </a>
+
+              <NetlifyForm />
+              
               <a className="d-flex flex-row-reverse" href="https://www.linkedin.com/in/joseleonardofernandez/"><i className="fab fa-linkedin-in fa-1x pt-2" /></a>
               <a className="d-flex flex-row-reverse mt-1" href="https://github.com/lfernandez79"><i className="fab fa-github fa-1x pt-2" /></a>
 
-              <NetlifyForm />
+              
 
             </div>
           </div>
