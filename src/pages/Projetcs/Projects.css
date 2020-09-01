@@ -1,12 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+
+div h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  font-weight: 300;
+  
+}
 
 .zoomOut {
   position: relative;
   width: 100%;
-}
-h2 {
-  font-family: "Amatic SC";
-  
 }
 
 img {
@@ -24,7 +27,7 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(182, 204, 101);
+  background-color: #347B98;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -34,7 +37,7 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   -webkit-transition: .3s ease;
   transition: .4s ease;
   border-radius: 3%;
-  
+  opacity: .9;
   
 }
 
@@ -42,7 +45,7 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  opacity: .9;
+  
   
 }
 
@@ -55,22 +58,23 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 .text2  {
   position: absolute;
   font-size: 15px;
-  font-weight: 700;
-  font-family: fantasy;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #341809;
 }
 
-.text3 {
+div p a  {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -78,6 +82,9 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 1em;
-  
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: #B84E14;
 }
+

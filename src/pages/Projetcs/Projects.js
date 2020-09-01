@@ -34,8 +34,8 @@ function Projects() {
 
                 <p className="text2">Website to search airport information, world time and currency exchange, tech used: span html, css, bootstrap, api, git, jquery</p>
                 <p className="text3">
-                  <a href="https://lfernandez79.github.io/project1/" style={style.deco}>Deployed </a>
-                  <a href="https://github.com/lfernandez79/project1" style={style.deco}> GitHub</a>
+                  <a id="br" href="https://lfernandez79.github.io/project1/" style={style.deco}>Deployed</a>
+
                 </p>
               </div>
             </div>
@@ -47,7 +47,7 @@ function Projects() {
                 <p className="text2">Search popular restaurants or create a blog about recent dining experience. We buid it using the following: heroku, passportjs, mysql, travis, eslint, sequelized, express, nodejs, jquery, handlebars, ZomatoAPI</p>
                 <p className="text3">
                   <a href="https://project2-cody-gen-leo.herokuapp.com/" style={style.deco}>Deployed </a>
-                  <a href="https://github.com/lfernandez79/project2" style={style.deco}> GitHub</a>
+
                 </p>
               </div>
             </div>
@@ -60,7 +60,7 @@ function Projects() {
                 <p className="text2">Reached a local pizza restaturant in Dallas, to mimic a website order application using: reacjs, mysql, passportjs, expressjs, nodejs, heroku</p>
                 <p className="text3">
                   <a href="https://pizza-app-p3.herokuapp.com/" style={style.deco}>Deployed </a>
-                  <a href="https://github.com/lfernandez79/project3" style={style.deco}> GitHub</a>
+
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ function Projects() {
                 <p className="text2">First portfolio created with basic knowledge on: html, css, bootstrap, javascript, aos,</p>
                 <p className="text3">
                   <a href="https://lfernandez79.github.io/leoPortfolio/" style={style.deco}>Deployed </a>
-                  <a href="https://github.com/lfernandez79/leoPortfolio" style={style.deco}> GitHub</a>
+
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ function Projects() {
                 <p className="text2">Dynamic porfolio using:  reactjs, vantajs, react-animated-text, router-dom</p>
                 <p className="text3">
                   <a href="https://lfernandez79.github.io/reactPortfolio/" style={style.deco}>Deployed </a>
-                  <a href="https://github.com/lfernandez79/reactPortfolio" style={style.deco}> GitHub</a>
+
                 </p>
               </div>
             </div>
@@ -97,7 +97,7 @@ function Projects() {
                 <p className="text2">Pure JavaScript password generator website using: html, css, javascript, DOM</p>
                 <p className="text3">
                   <a href="https://lfernandez79.github.io/pwdGenerator/" style={style.deco}>Deployed </a>
-                  <a href="https://github.com/lfernandez79/pwdGenerator" style={style.deco}> GitHub</a>
+
                 </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ function Projects() {
                 <p className="text2">Burger website where you can add burgers to your list, then Devour and delete, I used: JQuery, JavaScript, MySQL, ORM, Handlebars, ExpressJS, Heroku </p>
                 <p className="text3">
                   <a href="https://pacific-harbor-91315.herokuapp.com/" style={style.deco}>Deployed </a>
-                  <a href="https://github.com/lfernandez79/burgerLogger" style={style.deco}> GitHub</a>
+
                 </p>
               </div>
             </div>

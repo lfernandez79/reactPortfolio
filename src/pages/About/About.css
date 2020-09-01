@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
 /* #view {
     height: 45vw;
 } */
@@ -7,26 +7,18 @@ main {
     border-style: hidden;
 }
 
-h2 {
-    color: black;
-}
-
-h3 {
-    color: black;
-}
-
-
 a {
     color: black;
 }
 
 p {
     line-height: 1em;
-    color: rgba(0, 0, 0, 0.473);
+    color: black;
     text-align: end;
-    font-size: 45px;
-    font-family: 'Amatic SC', cursive;
-    box-shadow: 8px 5px 5px lightslategray;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    
 }
 
 img:hover {

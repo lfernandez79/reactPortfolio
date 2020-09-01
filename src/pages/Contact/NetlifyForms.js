@@ -5,11 +5,14 @@ const style = {
   text: {
     textAlign: "center",
   },
+  font: {
+    fontSize: "2rem",
+  },
 };
 
 function NetlifyForm() {
   return (
-    <form name="contact" method="post" data-netlify="true">
+    <form className="m-5" name="contact" method="post" data-netlify="true">
       <input type="hidden" name="form-name" value="contact" />
       <p style={style.text}>
         <label>
@@ -30,7 +33,7 @@ function NetlifyForm() {
         </label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button className="btn btn-outline-dark" type="submit">Send</button>
       </p>
       <div data-netlify-recaptcha="true" />
     </form>
