@@ -12,7 +12,7 @@ const style = {
 
 function NetlifyForm() {
   return (
-    <form className="m-5" name="contact" method="post" data-netlify="true">
+    <form className="m-5" name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
       <p style={style.text}>
         <label>
