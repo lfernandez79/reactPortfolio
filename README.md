@@ -20,6 +20,7 @@ This portfolio uses these additional technologies:
 - Vanta Animation [vanta](https://www.vantajs.com/)
 - React Scroll [scrolling](https://www.npmjs.com/package/react-scroll)
 - Boostrap Grid System [bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/)
+- Netlify Forms with React
 
 ### What's Next:
 
