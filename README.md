@@ -3,7 +3,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
 ![Jest Test Coverage](https://img.shields.io/badge/Jest-coverage-green?style=flat-square&logo=jest)
 [![Build Status](https://travis-ci.com/lfernandez79/reactPortfolio.svg?branch=master)](https://travis-ci.com/lfernandez79/reactPortfolio)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4228fc4a-827f-4ef6-ada5-f15ce4f3b51a/deploy-status)](https://app.netlify.com/sites/suspicious-torvalds-dc0bb3/deploys)
+
 
 My portfolio is mobile-friendly, power by **reactJS**, fully automated with **TravisCI** and test coverage by **Jest** and **Eslint**.
 
@@ -20,6 +20,7 @@ This portfolio uses these additional technologies:
 - Vanta Animation [vanta](https://www.vantajs.com/)
 - React Scroll [scrolling](https://www.npmjs.com/package/react-scroll)
 - Boostrap Grid System [bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/)
+- Netlify Forms with React [Netlify](https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/?_ga=2.262890120.568164826.1598922600-862084528.1596554043#form-handling-with-a-stateless-react-form)
 
 ### What's Next:
 
