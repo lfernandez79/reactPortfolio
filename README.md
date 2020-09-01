@@ -3,6 +3,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
 ![Jest Test Coverage](https://img.shields.io/badge/Jest-coverage-green?style=flat-square&logo=jest)
 [![Build Status](https://travis-ci.com/lfernandez79/reactPortfolio.svg?branch=master)](https://travis-ci.com/lfernandez79/reactPortfolio)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4228fc4a-827f-4ef6-ada5-f15ce4f3b51a/deploy-status)](https://app.netlify.com/sites/suspicious-torvalds-dc0bb3/deploys)
 
 My portfolio is mobile-friendly, power by **reactJS**, fully automated with **TravisCI** and test coverage by **Jest** and **Eslint**.
 
