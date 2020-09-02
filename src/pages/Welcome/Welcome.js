@@ -3,8 +3,8 @@ import "./Welcome.css";
 
 function Welcome() {
   return (
+
     <div className="container">
-      <hr />
       <div className="row">
         <div style={{ background: "none" }} className="col jumbotron mt-5">
           <h1 className="display-1 text-center">
@@ -18,7 +18,6 @@ function Welcome() {
           </h1>
         </div>
       </div>
-
     </div>
   );
 }

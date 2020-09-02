@@ -15,7 +15,7 @@ function Contact() {
               <br />
               <h3 className="display-4 card-title">Full Stack Developer</h3>
               <h5 className="card-text">Let create something awesome together, I would love to be part of your project, solution.</h5>
-              <a className="card-text" href="mailto:lfernandez79@gmail.com?subject=Hello%20again!">
+              <a className="card-text" href="mailto:lfernandez79@gmail.com?subject=Hello%20I%20saw%20your%20portfolio%20and...">
                 This is my email
                 <strong> lfernandez79@gmail</strong>
                 , please contact me!
