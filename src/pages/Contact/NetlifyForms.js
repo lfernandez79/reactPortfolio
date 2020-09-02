@@ -4,35 +4,35 @@ import React from "react";
 const style = {
   text: {
     textAlign: "center",
+    fontSize: "1.5rem",
   },
-  font: {
-    fontSize: "2rem",
+  boxShadow: {
+    boxShadow: "7px 7px 5px #404040",
+    borderTopLeftRadius: "10px 10px",
+    borderBottomRightRadius: "10px 10px",
   },
 };
 
 function NetlifyForm() {
   return (
-    <form className="m-5" name="contact" method="post">
+    <form className="container m-5" name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
       <p style={style.text}>
         <label>
-          Your Name:
-          <input type="text" name="name" />
+          <input style={style.boxShadow} type="text" name="name" size="20" placeholder="Your Name" />
         </label>
       </p>
       <p style={style.text}>
         <label>
-          Your Email:
-          <input type="email" name="email" />
+          <input style={style.boxShadow} type="email" name="email" size="20" placeholder="your@email.com" />
         </label>
       </p>
       <p style={style.text}>
         <label>
-          Message:
-          <textarea name="message" />
+          <textarea style={style.boxShadow} name="message" rows="4" cols="40" placeholder="Your message" />
         </label>
       </p>
-      <p>
+      <p className="d-flex justify-content-center">
         <button className="btn btn-outline-dark" type="submit">Send</button>
       </p>
       <div data-netlify-recaptcha="true" />

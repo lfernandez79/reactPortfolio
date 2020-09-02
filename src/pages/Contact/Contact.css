@@ -5,13 +5,14 @@
 }
 
 .card-title {
+    font-family: "Open Sans";
     color: #B84E14;
+    font-weight: 400;
 }
-.card-body {
+.card-text {
     font-family: "Open Sans";
     font-size: 1.5rem;
     font-weight: 300;
-
 }
 
 a i {
