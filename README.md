@@ -3,11 +3,15 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
 ![Jest Test Coverage](https://img.shields.io/badge/Jest-coverage-green?style=flat-square&logo=jest)
 [![Build Status](https://travis-ci.com/lfernandez79/reactPortfolio.svg?branch=master)](https://travis-ci.com/lfernandez79/reactPortfolio)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/18582f7f-a53f-40d9-a6a5-b16d36dd93be/deploy-status)](https://app.netlify.com/sites/netlifyleoportfolio/deploys)
 
 
-My portfolio is mobile-friendly, power by **reactJS**, fully automated with **TravisCI** and test coverage by **Jest** and **Eslint**.
+My portfolio is mobile-friendly, power by **reactJS** using stateless components. Fully automated with **TravisCI** and **Netlify**. Test coverage by **Jest** with a combined library of **Eslint** to prevent typos, bugs and proper indentation. It is a live breathing project with often updates, adding new features and testing libraries to showcase what I'm working on, learning.
 
-[Check it out!](https://lfernandez79.github.io/reactPortfolio/)
+### Feedbacks are welcome!
+
+
+[Check it out!](https://netlifyleoportfolio.netlify.app)
 --
 
 ## Tech
@@ -24,10 +28,11 @@ This portfolio uses these additional technologies:
 
 ### What's Next:
 
- - Write MORE Tests
+ - Write MORE Tests with Jest
  - Add Night Mode
  - Deploy to Heroku
- - Add **Nodemailer**
+ - Refactor 
+ - Add ReactJS Stateful to keep track any changing data
 
 License
 ----
