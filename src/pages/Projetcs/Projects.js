@@ -44,7 +44,7 @@ function Projects() {
               <img className="d-flex img-fluid" src={Blog} alt="BLog" />
               <div className="overlay">
                 <p className="text1">Restaurant Blog</p>
-                <p className="text2">Search popular restaurants or create a blog about recent dining experience. We buid it using the following: heroku, passportjs, mysql, travis, eslint, sequelized, express, nodejs, jquery, handlebars, ZomatoAPI</p>
+                <p className="text2" style={{ fontSize: "10px" }}>Search popular restaurants or create a blog about recent dining experience. We buid it using the following: heroku, passportjs, mysql, travis, eslint, sequelized, express, nodejs, jquery, handlebars, ZomatoAPI</p>
                 <p className="text3">
                   <a href="https://project2-cody-gen-leo.herokuapp.com/" style={style.deco}>Deployed </a>
 
