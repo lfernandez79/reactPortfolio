@@ -4,7 +4,6 @@ import "./Welcome.css";
 function Welcome() {
   return (
 
-    <div>
     <div className="container">
       <div className="row">
         <div style={{ background: "none" }} className="col jumbotron mt-5">
@@ -19,7 +18,6 @@ function Welcome() {
           </h1>
         </div>
       </div>
-    </div>
     </div>
   );
 }

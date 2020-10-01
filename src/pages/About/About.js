@@ -6,10 +6,10 @@ import PorImg from "../images/Leo.jpg";
 
 function About() {
   return (
-    <div id="About">
+    <div style={{ background: "none" }}>
 
       <section id="About" className="container mt-5 border-0">
-       
+        <hr />
         <main className="my-3">
           <div className="row pt-2 px-3">
             <div className="col-md-6 col-lg-4">
