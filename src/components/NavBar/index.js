@@ -13,6 +13,7 @@ const style = {
 
 function NavBar() {
   return (
+    <div>
     <header className="row align-items-center py-3">
 
       <div className="col-sm-12 col-md-6">
@@ -41,6 +42,8 @@ function NavBar() {
       </nav>
 
     </header>
+    <hr />
+    </div>
   );
 }
 

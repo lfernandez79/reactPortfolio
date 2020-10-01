@@ -19,7 +19,7 @@ const style = {
 function Projects() {
   return (
     <div id="Projtcs" className="container">
-      <hr />
+
       <h3 className="text-center">Hover each project for details!</h3>
 
       <article id="view" className="my-3">
