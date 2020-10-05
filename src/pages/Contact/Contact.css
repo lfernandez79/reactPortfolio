@@ -23,3 +23,7 @@ a i {
 .card {
     background-color: transparent !important;
 }
+
+#btn {
+    font-family: Fira Code;
+}
