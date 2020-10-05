@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
+import "./Contact.css";
 
 const style = {
   text: {
@@ -34,7 +35,7 @@ function NetlifyForm() {
           </label>
         </p>
         <p className="d-flex justify-content-center">
-          <button className="btn btn-outline-dark" type="submit">Send</button>
+          <button id="btn" className="btn btn-outline-dark" type="submit">Send</button>
         </p>
         <div data-netlify-recaptcha="true" />
       </form>
