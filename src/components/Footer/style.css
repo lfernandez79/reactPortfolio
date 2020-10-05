@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap");
 
 footer h6 {
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Fira Code";
   background-color: #D4EDF7;
   margin: auto;
 }
