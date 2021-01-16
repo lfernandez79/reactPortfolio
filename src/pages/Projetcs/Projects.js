@@ -4,7 +4,6 @@ import TravelAdvisor from "../images/travelAdvisor.png";
 import Blog from "../images/blogProject.png";
 import Pizza from "../images/pizzaProject.png";
 import Portfoliov1 from "../images/Portfoliov1.0.png";
-import Portfolio from "../images/Portfoliov2.0.png";
 import Password from "../images/passwordGenerator.png";
 import Burger from "../images/eatBurger.png";
 import "./Projects.css";
