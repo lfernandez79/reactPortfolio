@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "19231ccd2f8fc34e1e63220d6bfeace2",
+    "revision": "a5a14caf02ebdb2f4df9c2f668134b6a",
     "url": "./index.html"
   },
   {
-    "revision": "fe1b8acee8ad755f560e",
+    "revision": "e0d65d3a407f7bac5afd",
     "url": "./static/css/main.132cd1ed.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/js/2.19a84efc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe1b8acee8ad755f560e",
-    "url": "./static/js/main.c5179d5d.chunk.js"
+    "revision": "e0d65d3a407f7bac5afd",
+    "url": "./static/js/main.502b4ad9.chunk.js"
   },
   {
     "revision": "102fed25ffd1cde64d76",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d9a856e6a6f04224f421735334505406",
     "url": "./static/media/Leo.d9a856e6.jpg"
+  },
+  {
+    "revision": "b220cae39ab0d305e6df2ad3695fc8c6",
+    "url": "./static/media/PG.b220cae3.png"
   },
   {
     "revision": "9c0c1759ba536dc35dec6f2f10f36442",
@@ -42,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f66f4da3e9c030a9b4a94e4a4795fdc1",
     "url": "./static/media/eatBurger.f66f4da3.png"
-  },
-  {
-    "revision": "7b7c0a1d5cb465f2ec76178ce631b638",
-    "url": "./static/media/passwordGenerator.7b7c0a1d.png"
   },
   {
     "revision": "5d9e3418f4940251fbc29a2a5dc3f8b0",
