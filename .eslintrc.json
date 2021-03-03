@@ -5,9 +5,9 @@
         "node": true
     },
     "extends": [
-        "eslint:recommended",
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "eslint:recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -20,12 +20,22 @@
         "react"
     ],
     "rules": {
-       "quotes": ["error", "double"],
-       "jsx-quotes":["error", "prefer-double"],
-       "react/jsx-filename-extension": [
-        1, {
-            "extensions": [".js", ".jsx"]
-        }
-    ]
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ]
     }
 }
