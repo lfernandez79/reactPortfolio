@@ -8,7 +8,6 @@ import Password from "../images/PG.png";
 import Burger from "../images/eatBurger.png";
 import "./Projects.css";
 
-
 const style = {
   deco: {
     textDecorationLine: "none",
