@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.176cdab5.chunk.css",
-    "main.js": "./static/js/main.af064944.chunk.js",
-    "main.js.map": "./static/js/main.af064944.chunk.js.map",
+    "main.js": "./static/js/main.a681f881.chunk.js",
+    "main.js.map": "./static/js/main.a681f881.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.2fcffc39.js",
     "runtime-main.js.map": "./static/js/runtime-main.2fcffc39.js.map",
     "static/js/2.2c8e938a.chunk.js": "./static/js/2.2c8e938a.chunk.js",
@@ -17,12 +17,12 @@
     "static/media/blogProject.e4842679.png": "./static/media/blogProject.e4842679.png",
     "static/media/eatBurger.baffbf7d.png": "./static/media/eatBurger.baffbf7d.png",
     "static/media/pizzaProject.798b7922.png": "./static/media/pizzaProject.798b7922.png",
-    "static/media/travelAdvisor.a13f2902.png": "./static/media/travelAdvisor.a13f2902.png"
+    "static/media/travelAdvisor.c308c8e0.png": "./static/media/travelAdvisor.c308c8e0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2fcffc39.js",
     "static/js/2.2c8e938a.chunk.js",
     "static/css/main.176cdab5.chunk.css",
-    "static/js/main.af064944.chunk.js"
+    "static/js/main.a681f881.chunk.js"
   ]
 }
