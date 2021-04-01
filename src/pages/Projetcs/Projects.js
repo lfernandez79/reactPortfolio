@@ -32,7 +32,7 @@ function Projects() {
 
                 <p className="text2">Website to search airport information, world time and currency exchange, tech used: span html, css, bootstrap, api, git, jquery</p>
                 <p className="text3">
-                  <a id="br" href="https://lfernandez79.github.io/travelAdvisor/" style={style.deco}>Deployed</a>
+                  <a id="br" href="https://traveladvisor.netlify.app/" style={style.deco}>Deployed</a>
 
                 </p>
               </div>
