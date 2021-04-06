@@ -19,7 +19,7 @@ img {
   height: auto;
   border-radius: 3%;
  
-box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2)
 }
 
 .overlay {
@@ -37,8 +37,8 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   -webkit-transition: .3s ease;
   transition: .4s ease;
   border-radius: 3%;
-  opacity: .9;
-  
+  opacity: 1;
+  box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, .4)
 }
 
 .zoomOut:hover .overlay {
