@@ -4,6 +4,7 @@
 ![Jest Test Coverage](https://img.shields.io/badge/Jest-coverage-green?style=flat-square&logo=jest)
 [![Build Status](https://travis-ci.com/lfernandez79/reactPortfolio.svg?branch=master)](https://travis-ci.com/lfernandez79/reactPortfolio)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/18582f7f-a53f-40d9-a6a5-b16d36dd93be/deploy-status)](https://app.netlify.com/sites/netlifyleoportfolio/deploys)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flfernandez79%2FreactPortfolio.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flfernandez79%2FreactPortfolio?ref=badge_shield)
 
 
 My portfolio is mobile-friendly, power by **reactJS** using stateless components. Fully automated with **TravisCI** and **Netlify**. Test coverage by **Jest** with a combined library of **Eslint** to prevent typos, bugs and proper indentation. It is a live breathing project with often updates, adding new features and testing libraries to showcase what I'm working on, learning.
@@ -39,3 +40,6 @@ License
 MIT
 
 **Free Software, Hell Yeah!**
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flfernandez79%2FreactPortfolio.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flfernandez79%2FreactPortfolio?ref=badge_large)
