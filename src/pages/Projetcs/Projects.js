@@ -94,7 +94,7 @@ function Projects() {
                 <p className="text1">Password Generator</p>
                 <p className="text2">Pure JavaScript password generator website using: html, css, javascript, DOM</p>
                 <p className="text3">
-                  <a href="https://lfernandez79.github.io/pwdGenerator/" style={style.deco}>Deployed </a>
+                  <a href="https://pwdg.netlify.app/" style={style.deco}>Deployed </a>
 
                 </p>
               </div>

@@ -8,15 +8,16 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "eslint": "^8.34.0",
     "gh-pages": "^2.2.0",
     "joi": "^17.4.0",
     "react": "^16.13.1",
     "react-animated-text": "^0.1.4",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.7.16",
-    "webpack": "^4.44.2"
+    "webpack": "^4.28.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -40,13 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^7.21.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
   }
 }
