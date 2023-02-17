@@ -1,7 +1,7 @@
 import React from "react";
 
 import TravelAdvisor from "../images/travelAdvisor.png";
-import Blog from "../images/blogProject.png";
+// import Blog from "../images/blogProject.png";
 import Pizza from "../images/pizzaProject.png";
 import Portfoliov1 from "../images/Portfoliov1.0.png";
 import Password from "../images/PG.png";
@@ -29,7 +29,6 @@ function Projects() {
               <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor" />
               <div className="overlay">
                 <p className="text1">Travel Advisor</p>
-
                 <p className="text2">Website to search airport information, world time and currency exchange, tech used: span html, css, bootstrap, api, git, jquery</p>
                 <p className="text3">
                   <a id="br" href="https://traveladvisor.netlify.app/" style={style.deco}>Deployed</a>
@@ -38,7 +37,7 @@ function Projects() {
               </div>
             </div>
 
-            <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+            {/* <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Blog} alt="BLog" />
               <div className="overlay">
                 <p className="text1">Restaurant Blog</p>
@@ -48,7 +47,7 @@ function Projects() {
 
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="row d-flex justify-content-around my-5">
             <div data-aos="fade-right" className="zoomOut col-xs-12 col-md-5 p-0 m-1">

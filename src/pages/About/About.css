@@ -15,7 +15,7 @@ p {
     line-height: 2.5rem;
     color: black;
     text-align: end;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Fira Code";
     font-weight: 300;
     
@@ -26,20 +26,19 @@ img:hover {
 }
 
 #grayscale {
-  
   border-radius: 50%;
   box-shadow: 5px 5px 5px lightgrey;
   /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(10px);
 }
+
 #grayscale:hover {
 filter: blur(0);
   -webkit-filter: blur();
 }
 
 hr {
-  
   border: 0; 
   height: 1px; 
   background-image: linear-gradient(to right, #f0f0f0, #00b9ff, #59d941, #f0f0f0);

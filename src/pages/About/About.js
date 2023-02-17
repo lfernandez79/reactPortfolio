@@ -18,11 +18,10 @@ function About() {
 
             <div className="col-md-6 col-lg-8 intro">
               <p className="mt-3">
-                I'm a full stack developer
+                I'm a Javascript Enthusiast!
                 I'm based in Dallas, TX. Beside coding, I enjoy spending time with my two girls. I love coffee,
                 can't live without it. I also enjoy cooking, very relaxing if you ask me.
               </p>
-
               <p>
                 My skill range from HTML, CSS, Bootstrap, jQuery, Javascript, MySQL, MongoDB to ReactJS
                 also recently added CI/CD pipeline and Jest for testing.
