@@ -1,7 +1,7 @@
 import React from "react";
 import { Wave } from "react-animated-text";
 import { Link } from "react-scroll";
-import TravisCI from "../../pages/images/TravisCI-Mascot-2.png";
+// import TravisCI from "../../pages/images/TravisCI-Mascot-2.png";
 import "./style.css";
 
 const style = {
@@ -17,9 +17,9 @@ function NavBar() {
 
       <div className="col-sm-12 col-md-6">
         <a className="d-flex justify-content-center" href="https://travis-ci.com/github/lfernandez79/reactPortfolio" style={style.removeUnderline}>
-          <img id="radius" src={TravisCI} style={{ width: "5%", height: "5%" }} alt="TravisCI" />
+          {/* <img id="radius" src={TravisCI} style={{ width: "5%", height: "5%" }} alt="TravisCI" /> */}
           <span>
-            &nbsp; CI/CD!
+            {/* &nbsp; CI/CD! */}
           </span>
         </a>
 

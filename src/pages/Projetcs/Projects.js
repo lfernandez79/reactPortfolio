@@ -2,10 +2,10 @@ import React from "react";
 
 import TravelAdvisor from "../images/travelAdvisor.png";
 // import Blog from "../images/blogProject.png";
-import Pizza from "../images/pizzaProject.png";
+// import Pizza from "../images/pizzaProject.png";
 import Portfoliov1 from "../images/Portfoliov1.0.png";
 import Password from "../images/PG.png";
-import Burger from "../images/eatBurger.png";
+// import Burger from "../images/eatBurger.png";
 import "./Projects.css";
 
 const style = {
@@ -25,7 +25,7 @@ function Projects() {
         <main>
           <div className="row d-flex justify-content-around my-5">
 
-            <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+            <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor" />
               <div className="overlay">
                 <p className="text1">Travel Advisor</p>
@@ -50,7 +50,7 @@ function Projects() {
             </div> */}
           </div>
           <div className="row d-flex justify-content-around my-5">
-            <div data-aos="fade-right" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+            {/* <div data-aos="fade-right" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Pizza} alt="PizzaPage" />
               <div className="overlay">
                 <p className="text1">Zalat Pizza</p>
@@ -60,9 +60,9 @@ function Projects() {
 
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            <div data-aos="fade-left" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+            <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Portfoliov1} alt="Static Portfolio" />
               <div className="overlay">
                 <p className="text1">Static Portfolio</p>
@@ -75,7 +75,7 @@ function Projects() {
             </div>
           </div>
           <div className="row d-flex justify-content-around my-5">
-            <div data-aos="zoom-out" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
+            {/* <div data-aos="zoom-out" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Burger} alt="Eat that Burger" />
               <div className="overlay">
                 <p className="text1">Pick a Burger</p>
@@ -85,7 +85,7 @@ function Projects() {
 
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div data-aos="fade-right" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
               <img className="d-flex img-fluid" src={Password} alt="passwordGenerator" />
