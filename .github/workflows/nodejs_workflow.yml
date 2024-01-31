@@ -27,19 +27,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: npm run testlint
-      working-directory: /home/runner/work/reactPortfolio/
   build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
     - run: npm run build
-      working-directory: ./
   test:
     needs: setup
     runs-on: ubuntu-latest
     steps:
     - run: npm test
-      working-directory: ./
   deploy:
     needs: [lint, build, test]
     if: github.ref == 'refs/heads/master'
