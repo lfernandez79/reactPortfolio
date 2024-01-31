@@ -27,18 +27,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
-     - name: Run lint
-       run: npm run testlint
+     - run: npm run testlint
        
   build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - run: npm run build
   test:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - run: npm test
   deploy:
     needs: [lint, build, test]
