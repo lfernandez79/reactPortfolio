@@ -26,7 +26,8 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-    - run: npm run testlint || cat /home/runner/.npm/_logs/*-debug.log
+    - run: npm run testlint
+      working-directory: /Users/lfernandez79/Documents/Coding/react/reactPortfolio
   build:
     needs: setup
     runs-on: ubuntu-latest
