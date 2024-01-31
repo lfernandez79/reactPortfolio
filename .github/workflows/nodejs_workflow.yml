@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: npm run testlint
-      working-directory: /Users/lfernandez79/Documents/Coding/react/reactPortfolio
+      working-directory: /reactPortfolio/
   build:
     needs: setup
     runs-on: ubuntu-latest
