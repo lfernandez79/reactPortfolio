@@ -15,7 +15,6 @@ jobs:
         node-version: '14.x'
     - name: Install dependencies
       run: npm ci
-      working-directory: reactPortfolio
     - name: Cache Node.js modules
       uses: actions/cache@v2
       with:
