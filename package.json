@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --coverage",
     "eject": "react-scripts eject",
-    "testlint": "eslint --quiet src",
-    "fix": "eslint --fix src",
+    "testlint": " npx eslint --quiet src",
+    "fix": "npx eslint --fix src",
     "postlint": "echo ✅ lint valid"
   },
   "browserslist": {
