@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "6.1.1",
+    "gh-pages": "^6.1.1",
     "joi": "^17.4.2",
     "react": "latest",
     "react-animated-text": "^0.1.4",
