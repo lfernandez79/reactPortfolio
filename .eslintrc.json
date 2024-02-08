@@ -4,6 +4,9 @@
         "es2021": true,
         "node": true
     },
+    "plugins": [
+        "react"
+    ],
     "extends": [
         "plugin:react/recommended",
         "eslint:recommended"
@@ -20,9 +23,6 @@
             "version": "detect"
         }
     },
-    "plugins": [
-        "react"
-    ],
     "rules": {
         "semi": [
             "error",
