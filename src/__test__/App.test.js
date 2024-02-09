@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import App from "../App";
 
 // eslint-disable-next-line no-undef
-it("Rendering with no crashes or errors", () => {
+it("renders without crashing or errors", () => {
   const div = document.createElement("div");
-  ReactDOM.createRoot(<App />, div);
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
 });
