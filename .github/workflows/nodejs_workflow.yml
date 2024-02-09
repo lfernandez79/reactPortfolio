@@ -28,6 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
+     - name: Install dependencies
+       run: npm ci
      - run: npm run testlint
        
   build:
@@ -35,12 +37,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm ci
     - run: npm run build
   test:
     needs: setup
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm ci
     - run: npm test
   deploy:
     needs: [lint, build, test]
