@@ -5,6 +5,9 @@
         "node": true,
         "root": true
     },
+    "plugins": [
+        "react"
+    ],
     "extends": [
         "plugin:react/recommended",
         "eslint:recommended"
