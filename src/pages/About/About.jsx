@@ -1,36 +1,29 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable max-len */
 import React from "react";
+import { owner } from "../../data/portfolio";
+import { images } from "../../data/images";
 import "./About.css";
-import PorImg from "../images/Leo.jpg";
 
 function About() {
   return (
     <div style={{ background: "none" }}>
-
       <section id="About" className="container mt-5 border-0">
         <hr />
         <main className="my-3">
           <div className="row pt-2 px-3">
             <div className="col-md-6 col-lg-4">
-              <img id="grayscale" className="img-fluid d-flex align-items-md-stretch" src={PorImg} alt="LeoFernandez" />
+              <img
+                id="grayscale"
+                className="img-fluid d-flex align-items-md-stretch"
+                src={images.portrait}
+                alt={owner.name}
+              />
             </div>
-
             <div className="col-md-6 col-lg-8 intro">
-              <p className="mt-3">
-                I'm a Javascript Enthusiast!
-                I'm based in Dallas, TX. Beside coding, I enjoy spending time with my two girls. I love coffee,
-                can't live without it. I also enjoy cooking, very relaxing if you ask me.
-              </p>
-              <p>
-                My skill range from HTML, CSS, Bootstrap, jQuery, Javascript, MySQL, MongoDB to ReactJS
-                also recently added CI/CD pipeline and Jest for testing.
-              </p>
-              <p>
-                I love to be part of the process where you are putting
-                pieces together like a lego puzzle, then add any functionality that you can think of, coding is
-                unlimited!
-              </p>
+              {owner.bio.map((paragraph, i) => (
+                <p key={i} className="mt-3">
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
         </main>
@@ -39,4 +32,5 @@ function About() {
     </div>
   );
 }
+
 export default About;

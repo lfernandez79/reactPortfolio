@@ -34,7 +34,7 @@ Auto-deployed to Netlify on push to `master`. The `netlify.toml` at the repo roo
 Active modernization in progress:
 
 - [x] Migrate CRA → Vite
-- [ ] Extract content to data layer
+- [x] Extract content to data layer
 - [ ] CSS design system with custom properties
 - [ ] Move CDN dependencies to npm
 - [ ] Mobile-first responsive CSS
