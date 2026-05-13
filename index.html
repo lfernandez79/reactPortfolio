@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Leo Fernandez — Frontend Web Developer Portfolio" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/291451fd76.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Leo Fernandez | Frontend Developer</title>
+  </head>
+  <body id="vanta">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- Netlify hidden form — required for Netlify Forms to work, do not remove -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/vendor/three.r119.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.net.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      VANTA.NET({
+        el: "#vanta",
+        mouseControls: false,
+        touchControls: false,
+        minHeight: 200,
+        minWidth: 200,
+        scale: 1,
+        scaleMobile: 1,
+        color: 0xb4c6ff,
+        backgroundColor: 0xffffff,
+        showDots: false,
+      });
+    </script>
+    <script>
+      AOS.init({
+        delay: 1,
+        duration: 700,
+        mirror: true,
+      });
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

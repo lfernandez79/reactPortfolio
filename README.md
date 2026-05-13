@@ -1,41 +1,46 @@
-# ReactJS Portfolio
+# Leo Fernandez — Frontend Developer Portfolio
 
-![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
-![Jest Test Coverage](https://img.shields.io/badge/Jest-coverage-green?style=flat-square&logo=jest)
-[![Build Status](https://travis-ci.com/lfernandez79/reactPortfolio.svg?branch=master)](https://travis-ci.com/lfernandez79/reactPortfolio)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/18582f7f-a53f-40d9-a6a5-b16d36dd93be/deploy-status)](https://app.netlify.com/sites/netlifyleoportfolio/deploys)
+![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
+![Vitest](https://img.shields.io/badge/Vitest-passing-green?style=flat-square&logo=vitest)
 
+A personal portfolio built with React 18 and Vite. Live at [netlifyleoportfolio.netlify.app](https://netlifyleoportfolio.netlify.app).
 
-My portfolio is mobile-friendly, power by **reactJS** using stateless components. Fully automated with **TravisCI** and **Netlify**. Test coverage by **Jest** with a combined library of **Eslint** to prevent typos, bugs and proper indentation. It is a live breathing project with often updates, adding new features and testing libraries to showcase what I'm working on, learning.
+## Tech Stack
 
-### Feedbacks are welcome!
+- **React 18** + **Vite 5** — fast dev server and optimized production builds
+- **react-scroll** — smooth anchor-scroll navigation
+- **Vanta.NET** — animated WebGL background
+- **AOS** — scroll-triggered project card animations
+- **Netlify Forms** — contact form with spam protection
+- **Vitest** + **React Testing Library** — component testing
 
+## Development
 
-[Check it out!](https://netlifyleoportfolio.netlify.app)
---
+```bash
+npm install
+npm start        # dev server → http://localhost:3000
+npm run build    # production build → dist/
+npm test         # run tests with Vitest
+npm run lint     # ESLint
+```
 
-## Tech
+## Deployment
 
-This portfolio uses these additional technologies:
+Auto-deployed to Netlify on push to `master`. The `netlify.toml` at the repo root configures the build command and publish directory.
 
-- React [reactJS](https//:reactjs.org) 
-- React Animated Text [react text animation](https://www.npmjs.compackage/react-animated-text)
-- GitHub [github pages](https://github.com)
-- Vanta Animation [vanta](https://www.vantajs.com/)
-- React Scroll [scrolling](https://www.npmjs.com/package/react-scroll)
-- Boostrap Grid System [bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/)
-- Netlify Forms with React [Netlify](https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/?_ga=2.262890120.568164826.1598922600-862084528.1596554043#form-handling-with-a-stateless-react-form)
+## Roadmap
 
-### What's Next:
+Active modernization in progress:
 
- - Write MORE Tests with Jest
- - Add Night Mode
- - Deploy to Heroku
- - Refactor 
- - Add ReactJS Stateful to keep track any changing data
+- [x] Migrate CRA → Vite
+- [ ] Extract content to data layer
+- [ ] CSS design system with custom properties
+- [ ] Move CDN dependencies to npm
+- [ ] Mobile-first responsive CSS
+- [ ] Replace animations with Framer Motion
+- [ ] Prettier + Husky code quality gates
 
-License
-----
+## License
+
 MIT
-
-**Free Software, Hell Yeah!**

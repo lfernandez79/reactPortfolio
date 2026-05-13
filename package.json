@@ -1,45 +1,31 @@
 {
-  "homepage": ".",
   "name": "reactportfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^6.1.1",
-    "react": "latest",
+    "react": "^18.3.0",
     "react-animated-text": "^0.1.4",
-    "react-dom": "latest",
-    "react-scripts": "^5.0.1",
-    "react-scroll": "latest"
+    "react-dom": "^18.3.0",
+    "react-scroll": "^1.9.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
-    "eject": "react-scripts eject",
-    "testlint": " npx eslint --quiet src",
-    "fix": "npx eslint --fix src",
-    "postlint": "echo ✅ lint valid"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run --coverage",
+    "lint": "npx eslint --quiet src",
+    "fix": "npx eslint --fix src"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "@vitest/coverage-v8": "^2.0.0",
     "eslint": "^8.34.0",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint-plugin-react": "^7.33.2",
+    "jsdom": "^24.0.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.0"
   }
 }
