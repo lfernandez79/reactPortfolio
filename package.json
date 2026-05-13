@@ -2,6 +2,7 @@
   "name": "reactportfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "react": "^18.3.0",
     "react-animated-text": "^0.1.4",
@@ -20,7 +21,7 @@
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.0",
-    "@vitejs/plugin-react": "^4.3.0",
+    "@vitejs/plugin-react-swc": "^4.3.0",
     "@vitest/coverage-v8": "^2.0.0",
     "eslint": "^8.34.0",
     "eslint-plugin-react": "^7.33.2",
