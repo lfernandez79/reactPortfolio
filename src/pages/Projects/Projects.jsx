@@ -15,7 +15,6 @@ function Projects() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                data-aos={project.animation}
                 className="zoomOut col-xs-12 col-md-5 p-0 m-1"
               >
                 <img
