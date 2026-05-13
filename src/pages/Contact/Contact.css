@@ -16,7 +16,7 @@
   font-weight: 300;
 }
 
-a i {
+a svg {
   color: var(--color-accent);
   margin-left: 10px;
 }

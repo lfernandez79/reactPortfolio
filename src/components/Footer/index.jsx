@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 import "./style.css";
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
     <footer id="copyright">
       <h6 className="py-2">
         &copy;Copyright {new Date().getFullYear()} by me!{" "}
-        <span className="iconify" data-icon="logos-netlify" data-inline="false" style={{ fontSize: "30px" }} />
+        <Icon icon="logos:netlify" width={30} />
       </h6>
     </footer>
   );

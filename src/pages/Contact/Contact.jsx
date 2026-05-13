@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { owner } from "../../data/portfolio";
 import NetlifyForm from "./NetlifyForms";
 import "./Contact.css";
@@ -25,10 +27,10 @@ function Contact() {
               <NetlifyForm />
 
               <a className="d-flex flex-row-reverse" href={owner.linkedin}>
-                <i className="fab fa-linkedin-in fa-2x pt-2" />
+                <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="pt-2" />
               </a>
               <a className="d-flex flex-row-reverse mt-1" href={owner.github}>
-                <i className="fab fa-github fa-2x pt-2" />
+                <FontAwesomeIcon icon={faGithub} size="2x" className="pt-2" />
               </a>
             </div>
           </div>
