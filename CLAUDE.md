@@ -30,9 +30,10 @@ NavBar → Welcome → About → Projects → Contact → Footer
 - **Pages** (`src/pages/`): Each section is a standalone stateless functional component with a co-located CSS file. Images live in `src/pages/images/`.
 - **Contact form** uses Netlify Forms — hidden form in `index.html` (root) is required for Netlify's build bot to detect it; `NetlifyForms.jsx` renders the visible form with matching `name="contact"`.
 - **Data layer** (`src/data/`): `portfolio.js` exports `owner` (name, title, bio, email, social links) and `projects` array — single source of truth for all content. `images.js` exports all image imports keyed by string matching `projects[].image`.
-- **NavBar** uses `react-animated-text` (`<Wave>`) for animated link text and `react-scroll` `<Link>` for smooth scrolling. *(Will be replaced with Framer Motion in Phase 6.)*
-- **Styling**: CSS custom properties defined in `src/styles/tokens.css` (colors, spacing, typography, transitions). Global resets and font imports in `src/styles/global.css`. Per-component CSS files consume tokens via `var(--*)`. Bootstrap grid still via CDN — removed in Phase 4.
-- **Background animation**: Vanta.NET initialized via CDN inline script in `index.html`, targeting `<body id="vanta">`. *(Moves to React useEffect in Phase 4.)*
+- **NavBar** uses `react-scroll` `<Link>` for smooth scrolling. Plain text links for now. *(Framer Motion hover animation in Phase 6.)*
+- **Styling**: CSS custom properties defined in `src/styles/tokens.css` (colors, spacing, typography, transitions). Global resets and font imports in `src/styles/global.css`. Per-component CSS files consume tokens via `var(--*)`. Bootstrap CSS imported via npm in `main.jsx` — removed in Phase 5.
+- **Background animation**: Vanta.NET initialized via `useEffect` in `App.jsx` with cleanup on unmount.
+- **Icons**: Font Awesome (`@fortawesome/react-fontawesome`) for social icons in Contact; Iconify (`@iconify/react`) for Netlify logo in Footer.
 - **Tests**: One smoke test in `src/__test__/App.test.jsx` using `@testing-library/react`.
 
 ## File Structure Notes
@@ -57,7 +58,7 @@ This project is being modernized in phases. See the plan at `~/.claude/plans/cur
 | 1 — CRA → Vite | ✅ Done | Bundler, .jsx renames, Vitest |
 | 2 — Data layer | ✅ Done | All content in `src/data/portfolio.js` + `src/data/images.js` |
 | 3 — CSS design system | ✅ Done | `src/styles/tokens.css` + `global.css`, webkit bug fixes, token substitution |
-| 4 — CDN → npm | Pending | Remove all CDN scripts |
+| 4 — CDN → npm | ✅ Done | All CDN scripts → npm packages, Vanta in useEffect |
 | 5 — Responsive CSS | Pending | Mobile-first, media queries |
 | 6 — Animations | Pending | Framer Motion, remove Wave |
 | 7 — Code quality | Pending | Prettier + Husky |
