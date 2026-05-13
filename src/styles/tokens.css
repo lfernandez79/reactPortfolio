@@ -1,0 +1,35 @@
+:root {
+  /* Brand colors */
+  --color-primary: #347B98;
+  --color-accent: #B84E14;
+  --color-bg-footer: #D4EDF7;
+  --color-text-dark: #341809;
+
+  /* Typography */
+  --font-mono: "Fira Code", "Courier New", monospace;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Transitions */
+  --transition-base: 0.3s ease;
+
+  /* Border radius */
+  --radius-card: 3%;
+  --radius-circle: 50%;
+
+  /* Shadows */
+  --shadow-card: 15px 8px 8px 4px rgba(0, 0, 0, 0.2);
+  --shadow-overlay: 15px 8px 8px 4px rgba(0, 0, 0, 0.4);
+  --shadow-portrait: 5px 5px 5px lightgrey;
+
+  /* Breakpoints (reference only — use in @media queries) */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+}
