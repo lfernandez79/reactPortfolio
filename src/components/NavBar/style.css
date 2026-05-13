@@ -1,13 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap");
-
+/* Font imported in src/styles/global.css */
 
 li, a span {
-    font-family: 'Fira Code', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-#radius {
-  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 400;
 }

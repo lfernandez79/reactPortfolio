@@ -1,10 +1,10 @@
 export const owner = {
   name: "Leo",
-  title: "Frontend Web Developer",
+  title: "Technology Generalist | Web · DevOps · Linux",
   bio: [
-    "I'm a Javascript Enthusiast! I'm based in Dallas, TX. Beside coding, I enjoy spending time with my two girls. I love coffee, can't live without it. I also enjoy cooking, very relaxing if you ask me.",
-    "My skill range from HTML, CSS, Bootstrap, jQuery, Javascript, MySQL, MongoDB to ReactJS — also recently added CI/CD pipeline and Jest for testing.",
-    "I love to be part of the process where you are putting pieces together like a lego puzzle, then add any functionality that you can think of, coding is unlimited!",
+    "Dallas-based technologist with a hands-on approach to everything — web development, DevOps, containers, and Linux. My skill set doesn't fit neatly into one box, and I'm okay with that.",
+    "I'd rather know a little about a lot and keep learning than specialize early. From building React interfaces to containerizing workloads with Docker and Kubernetes, automating pipelines, and navigating Linux environments — I enjoy connecting the dots between development and operations.",
+    "Outside of tech, I spend time with my two girls, drink too much coffee, and cook when I need to reset.",
   ],
   email: "lfernandez79@gmail.com",
   linkedin: "https://www.linkedin.com/in/leofernandez79",

@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap");
+/* Font imported in src/styles/global.css */
 
 div h3 {
-  font-family: "Fira Code";
+  font-family: var(--font-mono);
   color: grey;
   font-weight: 300;
-  
 }
 
 .zoomOut {
@@ -13,13 +12,11 @@ div h3 {
 }
 
 img {
-  
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 3%;
- 
-box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2)
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
 }
 
 .overlay {
@@ -27,66 +24,53 @@ box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, 0.2)
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #347B98;
+  background-color: var(--color-primary);
   overflow: hidden;
   width: 100%;
   height: 100%;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: .3s ease;
-  transition: .4s ease;
-  border-radius: 3%;
+  transition: var(--transition-base);
+  border-radius: var(--radius-card);
   opacity: 1;
-  box-shadow: 15px 8px 8px 4px rgba(0, 0, 0, .4)
+  box-shadow: var(--shadow-overlay);
 }
 
 .zoomOut:hover .overlay {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
-  
-  
 }
 
 .text1 {
   position: absolute;
   top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 1.5rem;
 }
-.text2  {
+
+.text2 {
   position: absolute;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Fira Code', sans-serif;
+  font-family: var(--font-mono);
   line-height: 1rem;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #341809;
+  color: var(--color-text-dark);
 }
 
-div p a  {
+div p a {
   position: absolute;
   top: 80%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
-  font-family: 'Fira Code', sans-serif;
-  color: #B84E14;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
 }
-

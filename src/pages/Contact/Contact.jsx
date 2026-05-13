@@ -11,7 +11,7 @@ function Contact() {
           <div className="col-sm-12 col-md-12 card w-75 border-0">
             <div className="card-body">
               <br />
-              <h3 className="display-4 card-title">Full Stack Developer</h3>
+              <h3 className="display-4 card-title">Get In Touch</h3>
               <h5 className="card-text">
                 Lets create something awesome together, I would love to be part of your project, solution.
               </h5>

@@ -1,29 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap");
+/* Font imported in src/styles/global.css */
 
 #Contact {
-    background-color: #347B98;
+  background-color: var(--color-primary);
 }
 
 .card-title {
-    font-family: "Fira Code";
-    color: #B84E14;
-    font-weight: 400;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  font-weight: 400;
 }
+
 .card-text {
-    font-family: "Fira Code";
-    font-size: 1.5rem;
-    font-weight: 300;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 a i {
-    color: #B84E14;
-    margin-left: 10px;
+  color: var(--color-accent);
+  margin-left: 10px;
 }
 
 .card {
-    background-color: transparent !important;
+  background-color: transparent;
 }
 
 #btn {
-    font-family: Fira Code;
+  font-family: var(--font-mono);
 }
