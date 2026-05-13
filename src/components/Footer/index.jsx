@@ -5,11 +5,11 @@ function Footer() {
   return (
     <footer id="copyright">
       <h6 className="py-2">
-        &copy;Copyright 2023 by me!
-        {" "}
+        &copy;Copyright {new Date().getFullYear()} by me!{" "}
         <span className="iconify" data-icon="logos-netlify" data-inline="false" style={{ fontSize: "30px" }} />
       </h6>
     </footer>
   );
 }
+
 export default Footer;

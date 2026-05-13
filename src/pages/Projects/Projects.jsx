@@ -1,67 +1,37 @@
 import React from "react";
-
-import TravelAdvisor from "../images/travelAdvisor.png";
-import Portfoliov1 from "../images/Portfoliov1.0.png";
-import Password from "../images/PG.png";
+import { projects } from "../../data/portfolio";
+import { images } from "../../data/images";
 import "./Projects.css";
-
-const style = {
-  deco: {
-    textDecorationLine: "none",
-  },
-};
 
 function Projects() {
   return (
-    <div id="Projtcs" className="container">
+    <div id="Projects" className="container">
       <hr />
       <h3 className="text-center">Hover each project for details!</h3>
 
       <article id="view" className="my-3">
-
         <main>
           <div className="row d-flex justify-content-around my-5">
-
-            <div data-aos="fade-down" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
-              <img className="d-flex img-fluid" src={TravelAdvisor} alt="TravelAdvisor" />
-              <div className="overlay">
-                <p className="text1">Travel Advisor</p>
-                <p className="text2">Website to search airport information, world time and currency exchange, tech used: span html, css, bootstrap, api, git, jquery</p>
-                <p className="text3">
-                  <a id="br" href="https://traveladvisor.netlify.app/" style={style.deco}>Deployed</a>
-
-                </p>
+            {projects.map((project) => (
+              <div
+                key={project.id}
+                data-aos={project.animation}
+                className="zoomOut col-xs-12 col-md-5 p-0 m-1"
+              >
+                <img
+                  className="d-flex img-fluid"
+                  src={images[project.image]}
+                  alt={project.title}
+                />
+                <div className="overlay">
+                  <p className="text1">{project.title}</p>
+                  <p className="text2">{project.description}</p>
+                  <p className="text3">
+                    <a href={project.url}>Deployed</a>
+                  </p>
+                </div>
               </div>
-            </div>
-
-          </div>
-          <div className="row d-flex justify-content-around my-5">
-
-            <div data-aos="fade-up" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
-              <img className="d-flex img-fluid" src={Portfoliov1} alt="Static Portfolio" />
-              <div className="overlay">
-                <p className="text1">Static Portfolio</p>
-                <p className="text2">First portfolio created with basic knowledge on: html, css, bootstrap, javascript, aos,</p>
-                <p className="text3">
-                  <a href="https://lfernandez79.github.io/leoPortfolio/" style={style.deco}>Deployed </a>
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row d-flex justify-content-around my-5">
-
-            <div data-aos="fade-right" className="zoomOut col-xs-12 col-md-5 p-0 m-1">
-              <img className="d-flex img-fluid" src={Password} alt="passwordGenerator" />
-              <div className="overlay">
-                <p className="text1">Password Generator</p>
-                <p className="text2">Pure JavaScript password generator website using: html, css, javascript, DOM</p>
-                <p className="text3">
-                  <a href="https://pwdg.netlify.app/" style={style.deco}>Deployed </a>
-
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </main>
       </article>
