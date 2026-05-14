@@ -17,6 +17,10 @@
 }
 
 .hero-heading span {
+  display: inline-block;
+}
+
+.hero-subtitle {
   font-size: clamp(1.2rem, 3vw, 2rem);
   text-shadow: 2px 2px 3px grey;
 }

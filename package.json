@@ -8,6 +8,7 @@
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
     "@fortawesome/react-fontawesome": "^3.3.1",
     "@iconify/react": "^6.0.2",
+    "framer-motion": "^12.38.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-scroll": "^1.9.0",
@@ -20,7 +21,19 @@
     "preview": "vite preview",
     "test": "vitest run --coverage",
     "lint": "npx eslint --quiet src",
-    "fix": "npx eslint --fix src"
+    "fix": "npx eslint --fix src",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "src/**/*.css": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.0.0",
@@ -29,8 +42,13 @@
     "@vitejs/plugin-react-swc": "^4.3.0",
     "@vitest/coverage-v8": "^2.0.0",
     "eslint": "^8.34.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.33.2",
+    "husky": "^9.1.7",
     "jsdom": "^24.0.0",
+    "lint-staged": "^17.0.4",
+    "listr2": "^10.2.1",
+    "prettier": "^3.8.3",
     "vite": "^5.4.0",
     "vitest": "^2.0.0"
   }

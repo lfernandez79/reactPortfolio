@@ -6,8 +6,7 @@ function Footer() {
   return (
     <footer id="copyright">
       <h6 className="footer-text">
-        &copy;Copyright {new Date().getFullYear()} by me!{" "}
-        <Icon icon="logos:netlify" width={30} />
+        &copy;Copyright {new Date().getFullYear()} by me! <Icon icon="logos:netlify" width={30} />
       </h6>
     </footer>
   );

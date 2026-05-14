@@ -25,6 +25,26 @@
   cursor: pointer;
 }
 
+.nav-link-text {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: var(--transition-base);
+}
+
+.nav-link:hover .nav-link-text::after {
+  width: 100%;
+}
+
 @media (min-width: 640px) {
   .navbar-list {
     gap: var(--space-xl);
