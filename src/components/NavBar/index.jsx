@@ -4,20 +4,20 @@ import "./style.css";
 
 function NavBar() {
   return (
-    <header className="row align-items-center py-3">
-      <nav className="col-sm-12 col-md-6">
-        <ul className="nav d-flex justify-content-around">
-          <li className="nav-item">
+    <header className="navbar">
+      <nav>
+        <ul className="navbar-list">
+          <li>
             <Link to="About" duration={500} smooth className="nav-link" href="/">
               About
             </Link>
           </li>
-          <li className="nav-item">
+          <li>
             <Link to="Projects" duration={500} smooth className="nav-link" href="/">
               Portfolio
             </Link>
           </li>
-          <li className="nav-item">
+          <li>
             <Link to="Contact" duration={500} smooth className="nav-link" href="/">
               Contact
             </Link>

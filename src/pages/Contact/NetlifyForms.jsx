@@ -15,26 +15,26 @@ const style = {
 
 function NetlifyForm() {
   return (
-    <div className="container my-5">
+    <div className="contact-form">
       <form name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <p style={style.text}>
           <label>
-            <input style={style.boxShadow} type="text" name="name" size="20" placeholder="Your Name" />
+            <input style={style.boxShadow} type="text" name="name" placeholder="Your Name" />
           </label>
         </p>
         <p style={style.text}>
           <label>
-            <input style={style.boxShadow} type="email" name="email" size="20" placeholder="your@email.com" />
+            <input style={style.boxShadow} type="email" name="email" placeholder="your@email.com" />
           </label>
         </p>
         <p style={style.text}>
           <label>
-            <textarea style={style.boxShadow} name="message" rows="4" cols="40" placeholder="Your message" />
+            <textarea style={style.boxShadow} name="message" rows="4" placeholder="Your message" />
           </label>
         </p>
-        <p className="d-flex justify-content-center">
-          <button id="btn" className="btn btn-outline-dark" type="submit">Send</button>
+        <p className="contact-form-actions">
+          <button className="contact-form-btn" type="submit">Send</button>
         </p>
         <div data-netlify-recaptcha="true" />
       </form>

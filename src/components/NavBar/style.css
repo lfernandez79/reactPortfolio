@@ -1,7 +1,32 @@
 /* Font imported in src/styles/global.css */
 
-li, a span {
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+}
+
+.navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
   font-family: var(--font-mono);
   font-size: 1.5rem;
   font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .navbar-list {
+    gap: var(--space-xl);
+  }
 }

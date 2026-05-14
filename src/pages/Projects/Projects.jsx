@@ -5,36 +5,29 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <div id="Projects" className="container">
+    <section id="Projects" className="projects-section">
       <hr />
-      <h3 className="text-center">Hover each project for details!</h3>
+      <h3 className="projects-heading">Hover each project for details!</h3>
 
-      <article id="view" className="my-3">
-        <main>
-          <div className="row d-flex justify-content-around my-5">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className="zoomOut col-xs-12 col-md-5 p-0 m-1"
-              >
-                <img
-                  className="d-flex img-fluid"
-                  src={images[project.image]}
-                  alt={project.title}
-                />
-                <div className="overlay">
-                  <p className="text1">{project.title}</p>
-                  <p className="text2">{project.description}</p>
-                  <p className="text3">
-                    <a href={project.url}>Deployed</a>
-                  </p>
-                </div>
-              </div>
-            ))}
+      <div className="projects-grid">
+        {projects.map((project) => (
+          <div key={project.id} className="project-card">
+            <img
+              className="project-image"
+              src={images[project.image]}
+              alt={project.title}
+            />
+            <div className="overlay">
+              <p className="text1">{project.title}</p>
+              <p className="text2">{project.description}</p>
+              <p className="text3">
+                <a href={project.url}>Deployed</a>
+              </p>
+            </div>
           </div>
-        </main>
-      </article>
-    </div>
+        ))}
+      </div>
+    </section>
   );
 }
 
