@@ -9,11 +9,7 @@ function About() {
       <hr />
       <div className="about-layout">
         <div className="about-portrait-col">
-          <img
-            className="about-portrait"
-            src={images.portrait}
-            alt={owner.name}
-          />
+          <img className="about-portrait" src={images.portrait} alt={owner.name} />
         </div>
         <div className="about-bio">
           {owner.bio.map((paragraph, i) => (

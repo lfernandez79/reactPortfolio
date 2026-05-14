@@ -33,8 +33,7 @@ export const projects = [
   {
     id: 3,
     title: "Password Generator",
-    description:
-      "Pure JavaScript password generator website using: HTML, CSS, JavaScript, DOM.",
+    description: "Pure JavaScript password generator website using: HTML, CSS, JavaScript, DOM.",
     image: "passwordGenerator",
     url: "https://pwdg.netlify.app/",
     animation: "fade-right",

@@ -34,7 +34,9 @@ function NetlifyForm() {
           </label>
         </p>
         <p className="contact-form-actions">
-          <button className="contact-form-btn" type="submit">Send</button>
+          <button className="contact-form-btn" type="submit">
+            Send
+          </button>
         </p>
         <div data-netlify-recaptcha="true" />
       </form>
