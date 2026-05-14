@@ -16,24 +16,16 @@ export const projects = [
     id: 1,
     title: "Travel Advisor",
     description:
-      "Website to search airport information, world time and currency exchange. Tech used: HTML, CSS, Bootstrap, API, Git, jQuery.",
+      "Airport finder, world time, weather, currency and unit converter — all in a tabbed UI powered by multiple REST APIs.",
     image: "travelAdvisor",
     url: "https://traveladvisor.netlify.app/",
     animation: "fade-down",
   },
   {
-    id: 2,
-    title: "Static Portfolio",
-    description:
-      "First portfolio created with basic knowledge on: HTML, CSS, Bootstrap, JavaScript, AOS.",
-    image: "portfoliov1",
-    url: "https://lfernandez79.github.io/leoPortfolio/",
-    animation: "fade-up",
-  },
-  {
     id: 3,
     title: "Password Generator",
-    description: "Pure JavaScript password generator website using: HTML, CSS, JavaScript, DOM.",
+    description:
+      "Configurable password generator with character type toggles and length slider. Pure JavaScript and DOM manipulation.",
     image: "passwordGenerator",
     url: "https://pwdg.netlify.app/",
     animation: "fade-right",

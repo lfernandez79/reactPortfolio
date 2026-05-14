@@ -35,7 +35,7 @@ NavBar → Welcome → About → Projects → Contact → Footer
 - **NavBar** uses `react-scroll` `<Link>` for smooth scrolling. Framer Motion hover animation (lift + underline slide).
 - **Styling**: Mobile-first responsive CSS using CSS Grid and flexbox. CSS custom properties defined in `src/styles/tokens.css` (colors, spacing, typography, breakpoints). Global resets and font imports in `src/styles/global.css`. Per-component CSS files consume tokens via `var(--*)`. No Bootstrap — all layout is native CSS.
 - **Background animation**: Vanta.NET initialized via `useEffect` in `App.jsx` with cleanup on unmount.
-- **Icons**: Font Awesome (`@fortawesome/react-fontawesome`) for social icons in Contact; Iconify (`@iconify/react`) for Netlify logo in Footer.
+- **Icons**: Font Awesome (`@fortawesome/react-fontawesome`) for social icons in Contact; Iconify (`@iconify/react`) for Netlify logo in Footer and `devicon:*` tech logos in the About skills section.
 - **Animations**: Framer Motion for Welcome (staggered reveal), NavBar (hover lift + underline), and Projects (scroll-triggered fade-in per card direction via `useInView`).
 - **Tests**: One smoke test in `src/__test__/App.test.jsx` using `@testing-library/react`.
 - **Code quality**: Prettier + ESLint (with `eslint-config-prettier`). Husky pre-commit hook runs `lint-staged` on `src/**/*.{js,jsx,css}`.
@@ -53,9 +53,7 @@ NavBar → Welcome → About → Projects → Contact → Footer
 - **Netlify**: auto-deploys on push to `master`. Build command: `npm run build`, publish dir: `dist` (configured in `netlify.toml`). Node version pinned to 18 via `netlify.toml` + `.nvmrc`.
 - Netlify Forms: the hidden `<form>` in `index.html` must not be removed — Netlify's build scanner requires it.
 
-## Modernization Complete
-
-This project was modernized in 7 phases. See the plan at `~/.claude/plans/curious-shimmying-lollipop.md`.
+## Modernization Progress
 
 | Phase | Status | Focus |
 |---|---|---|
@@ -66,3 +64,5 @@ This project was modernized in 7 phases. See the plan at `~/.claude/plans/curiou
 | 5 — Responsive CSS | ✅ Done | Bootstrap removed, mobile-first CSS Grid, images optimized |
 | 6 — Animations | ✅ Done | Framer Motion: staggered Welcome, NavBar hover, scroll-triggered Projects |
 | 7 — Code quality | ✅ Done | Prettier + Husky pre-commit, ESLint integrated |
+| 8 — Visual refresh | ✅ Done | Modern typography (Inter headings), richer color palette, gradient About section, skills/tech stack with Iconify devicon icons |
+| 9 — Content cleanup | ✅ Done | Removed Static Portfolio project, updated descriptions and project images |
