@@ -50,7 +50,7 @@ NavBar → Welcome → About → Projects → Contact → Footer
 
 ## Deployment
 
-- **Netlify**: auto-deploys on push to `master`. Build command: `npm run build`, publish dir: `dist` (configured in `netlify.toml`). Node version pinned to 18 via `netlify.toml` + `.nvmrc`.
+- **Netlify**: auto-deploys on push to `master`. Build command: `npm run build`, publish dir: `dist` (configured in `netlify.toml`). Node version set to 20 via `netlify.toml` + `.nvmrc`.
 - Netlify Forms: the hidden `<form>` in `index.html` must not be removed — Netlify's build scanner requires it.
 
 ## Modernization Progress
@@ -66,3 +66,4 @@ NavBar → Welcome → About → Projects → Contact → Footer
 | 7 — Code quality | ✅ Done | Prettier + Husky pre-commit, ESLint integrated |
 | 8 — Visual refresh | ✅ Done | Modern typography (Inter headings), richer color palette, gradient About section, skills/tech stack with Iconify devicon icons |
 | 9 — Content cleanup | ✅ Done | Removed Static Portfolio project, updated descriptions and project images |
+| 10 — Node upgrade | ✅ Done | Node 18→20, CI actions v4→v6, jsdom unpinned, portrait cleanup |
