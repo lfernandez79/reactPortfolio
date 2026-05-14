@@ -1,12 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
 import "./style.css";
 
 const navItems = [
-  { to: "About", label: "About" },
-  { to: "Projects", label: "Portfolio" },
-  { to: "Contact", label: "Contact" },
+  { to: "/about", label: "About" },
+  { to: "/projects", label: "Portfolio" },
+  { to: "/contact", label: "Contact" },
 ];
 
 function NavBar() {
@@ -14,9 +14,20 @@ function NavBar() {
     <header className="navbar">
       <nav>
         <ul className="navbar-list">
+          <li>
+            <NavLink to="/" className="nav-link">
+              <motion.span
+                className="nav-link-text"
+                whileHover={{ y: -2 }}
+                transition={{ duration: 0.2 }}
+              >
+                Home
+              </motion.span>
+            </NavLink>
+          </li>
           {navItems.map(({ to, label }) => (
             <li key={to}>
-              <Link to={to} duration={500} smooth className="nav-link" href="/">
+              <NavLink to={to} className="nav-link">
                 <motion.span
                   className="nav-link-text"
                   whileHover={{ y: -2 }}
@@ -24,7 +35,7 @@ function NavBar() {
                 >
                   {label}
                 </motion.span>
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>

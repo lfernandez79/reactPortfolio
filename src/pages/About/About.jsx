@@ -35,7 +35,6 @@ const skills = [
 function About() {
   return (
     <section id="About" className="about-section">
-      <hr />
       <div className="about-bio">
         {owner.bio.map((paragraph, i) => (
           <p key={i}>{paragraph}</p>

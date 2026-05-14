@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Routes, Route } from "react-router-dom";
 import * as THREE from "three";
 import VANTA from "vanta/dist/vanta.net.min";
 import NavBar from "./components/NavBar";
@@ -39,18 +40,29 @@ function App() {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef}>
-      <NavBar />
+    <div ref={vantaRef} style={{ position: "relative", minHeight: "100vh" }}>
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+        }}
+      >
+        <NavBar />
 
-      <Welcome />
+        <main style={{ flex: 1 }}>
+          <Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
 
-      <About />
-
-      <Projects />
-
-      <Contact />
-
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }

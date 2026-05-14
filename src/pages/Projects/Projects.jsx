@@ -38,7 +38,6 @@ function ProjectCard({ project }) {
 function Projects() {
   return (
     <section id="Projects" className="projects-section">
-      <hr />
       <h3 className="projects-heading">Projects</h3>
 
       <div className="projects-grid">
