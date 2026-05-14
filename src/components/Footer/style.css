@@ -7,6 +7,8 @@ footer {
 .footer-text {
   text-align: center;
   font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text-light);
   margin: 0;
   padding: var(--space-sm) 0;
 }

@@ -18,16 +18,19 @@
 }
 
 .contact-heading {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: clamp(1.8rem, 4vw, 3.5rem);
-  color: var(--color-accent);
-  font-weight: 400;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -0.02em;
 }
 
 .contact-text {
-  font-family: var(--font-mono);
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--color-text-light);
+  line-height: 1.6;
 }
 
 .contact-social {
@@ -38,7 +41,12 @@
 }
 
 .contact-social a svg {
-  color: var(--color-accent);
+  color: var(--color-accent-soft);
+  transition: var(--transition-base);
+}
+
+.contact-social a:hover svg {
+  color: white;
 }
 
 .contact-form {
@@ -49,6 +57,25 @@
 .contact-form textarea {
   width: 100%;
   max-width: 400px;
+  font-family: var(--font-sans);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 4px;
+  transition: var(--transition-base);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-soft);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .contact-form-actions {
@@ -57,16 +84,19 @@
 }
 
 .contact-form-btn {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 500;
   padding: var(--space-sm) var(--space-lg);
   background: transparent;
-  border: 1px solid #343a40;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 4px;
   cursor: pointer;
+  color: white;
   transition: var(--transition-base);
 }
 
 .contact-form-btn:hover {
-  background-color: #343a40;
-  color: white;
+  background-color: white;
+  color: var(--color-primary);
+  border-color: white;
 }

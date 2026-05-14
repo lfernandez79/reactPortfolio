@@ -9,11 +9,13 @@
 }
 
 .hero-heading {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: clamp(1.8rem, 5vw, 4.5rem);
-  color: grey;
-  text-shadow: 2px 2px 4px grey;
+  font-weight: 300;
+  color: var(--color-text-dark);
   text-align: center;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .hero-heading span {
@@ -21,6 +23,10 @@
 }
 
 .hero-subtitle {
-  font-size: clamp(1.2rem, 3vw, 2rem);
-  text-shadow: 2px 2px 3px grey;
+  font-family: var(--font-mono);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  color: var(--color-accent);
+  letter-spacing: 0;
+  margin-top: var(--space-sm);
 }

@@ -42,22 +42,36 @@
 }
 
 .about-bio p {
-  line-height: 2.5rem;
-  color: black;
+  line-height: 1.8;
+  color: var(--color-text-body);
   text-align: left;
-  font-size: 1.5rem;
-  font-family: var(--font-mono);
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-family: var(--font-sans);
+  font-weight: 400;
   margin-top: var(--space-md);
 }
 
 .about-section a {
-  color: black;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 2px;
+}
+
+.about-section a:hover {
+  color: var(--color-accent);
 }
 
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, #f0f0f0, #00b9ff, #59d941, #f0f0f0);
-  box-shadow: 5px 5px 5px lightcoral;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-divider),
+    var(--color-primary),
+    var(--color-divider),
+    transparent
+  );
+  margin: var(--space-xl) 0;
 }

@@ -18,11 +18,12 @@
 
 .nav-link {
   font-family: var(--font-mono);
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
-  color: inherit;
+  color: var(--color-text-body);
   cursor: pointer;
+  letter-spacing: -0.01em;
 }
 
 .nav-link-text {

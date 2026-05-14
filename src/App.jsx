@@ -24,8 +24,8 @@ function App() {
           minWidth: 200,
           scale: 1,
           scaleMobile: 1,
-          color: 0xb4c6ff,
-          backgroundColor: 0xffffff,
+          color: 0x7eb8c9,
+          backgroundColor: 0xf8fafc,
           showDots: false,
         })
       );

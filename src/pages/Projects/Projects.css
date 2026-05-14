@@ -7,10 +7,12 @@
 }
 
 .projects-heading {
-  font-family: var(--font-mono);
-  color: grey;
+  font-family: var(--font-sans);
+  color: var(--color-text-dark);
   font-weight: 300;
+  font-size: 2rem;
   text-align: center;
+  letter-spacing: -0.01em;
 }
 
 .projects-grid {
@@ -29,6 +31,12 @@
 .project-card {
   position: relative;
   width: 100%;
+  border-radius: var(--radius-card);
+  transition: var(--transition-base);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
 }
 
 .project-image {
@@ -66,22 +74,25 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-family: var(--font-sans);
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.5rem;
+  color: white;
 }
 
 .text2 {
   position: absolute;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 400;
   font-family: var(--font-mono);
-  line-height: 1rem;
+  line-height: 1.4;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: var(--color-text-dark);
+  color: var(--color-primary-light);
+  padding: 0 var(--space-md);
 }
 
 .text3 a {
@@ -90,8 +101,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  font-family: var(--font-mono);
-  color: var(--color-accent);
+  font-family: var(--font-sans);
+  color: var(--color-accent-soft);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: var(--transition-base);
+}
+
+.text3 a:hover {
+  border-bottom-color: var(--color-accent-soft);
 }
