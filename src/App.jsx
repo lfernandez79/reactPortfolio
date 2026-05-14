@@ -18,15 +18,18 @@ function App() {
         VANTA({
           el: vantaRef.current,
           THREE,
-          mouseControls: false,
-          touchControls: false,
+          mouseControls: true,
+          touchControls: true,
           minHeight: 200,
           minWidth: 200,
           scale: 1,
           scaleMobile: 1,
-          color: 0x7eb8c9,
-          backgroundColor: 0xf8fafc,
-          showDots: false,
+          color: 0x2a7a8c,
+          backgroundColor: 0xf1f5f9,
+          points: 8,
+          maxDistance: 25,
+          spacing: 20,
+          showDots: true,
         })
       );
     }
