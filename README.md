@@ -13,15 +13,14 @@ A personal portfolio site for a Dallas-based technology generalist covering web 
 
 | Category | Tools |
 |---|---|
-| **Framework** | React 18, Vite 5 |
+| **Framework** | React 18, Vite 6 |
 | **Animations** | Framer Motion (staggered reveals, scroll-triggered cards, hover effects) |
 | **Navigation** | react-scroll (smooth anchor scrolling) |
 | **Background** | Vanta.NET + Three.js (interactive WebGL net) |
 | **Icons** | Iconify (devicon tech logos), Font Awesome (social icons) |
 | **Styling** | CSS custom properties, CSS Grid, mobile-first responsive design |
 | **Forms** | Netlify Forms (contact form with spam filtering) |
-| **Testing** | Vitest, React Testing Library |
-| **Code Quality** | Prettier, ESLint, Husky + lint-staged (pre-commit hooks) |
+| **Testing** | Vitest, React Testing Library (smoke test) |
 
 ## Getting Started
 
@@ -57,6 +56,10 @@ src/
   data/             portfolio.js (content), images.js (image imports)
   styles/           tokens.css (design tokens), global.css (resets, fonts)
 ```
+
+## Acknowledgments
+
+Background animation powered by [Vanta.js](https://www.vantajs.com/) by [tengbao](https://github.com/tengbao/vanta).
 
 ## License
 
