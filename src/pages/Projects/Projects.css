@@ -1,17 +1,37 @@
 /* Font imported in src/styles/global.css */
 
-div h3 {
+.projects-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.projects-heading {
   font-family: var(--font-mono);
   color: grey;
   font-weight: 300;
+  text-align: center;
 }
 
-.zoomOut {
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.project-card {
   position: relative;
   width: 100%;
 }
 
-img {
+.project-image {
   display: block;
   width: 100%;
   height: auto;
@@ -35,7 +55,8 @@ img {
   box-shadow: var(--shadow-overlay);
 }
 
-.zoomOut:hover .overlay {
+.project-card:hover .overlay,
+.project-card:focus-within .overlay {
   transform: scale(1);
 }
 
@@ -63,7 +84,7 @@ img {
   color: var(--color-text-dark);
 }
 
-div p a {
+.text3 a {
   position: absolute;
   top: 80%;
   left: 50%;

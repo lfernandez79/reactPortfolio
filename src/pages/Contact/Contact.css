@@ -4,27 +4,69 @@
   background-color: var(--color-primary);
 }
 
-.card-title {
+.contact-card {
+  width: min(75%, 700px);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  background-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .contact-card {
+    width: 100%;
+  }
+}
+
+.contact-heading {
   font-family: var(--font-mono);
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   color: var(--color-accent);
   font-weight: 400;
 }
 
-.card-text {
+.contact-text {
   font-family: var(--font-mono);
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-a svg {
+.contact-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.contact-social a svg {
   color: var(--color-accent);
-  margin-left: 10px;
 }
 
-.card {
-  background-color: transparent;
+.contact-form {
+  margin: var(--space-xl) 0;
 }
 
-#btn {
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-btn {
   font-family: var(--font-mono);
+  padding: var(--space-sm) var(--space-lg);
+  background: transparent;
+  border: 1px solid #343a40;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.contact-form-btn:hover {
+  background-color: #343a40;
+  color: white;
 }

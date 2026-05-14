@@ -1,12 +1,22 @@
 /* Font imported in src/styles/global.css */
 
-div h1 {
-  font-family: var(--font-mono);
-  color: grey;
-  text-shadow: 2px 2px 4px grey;
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-xl) var(--space-lg);
+  margin-top: var(--space-xl);
 }
 
-div h1 span {
-  font-size: 2rem;
+.hero-heading {
+  font-family: var(--font-mono);
+  font-size: clamp(1.8rem, 5vw, 4.5rem);
+  color: grey;
+  text-shadow: 2px 2px 4px grey;
+  text-align: center;
+}
+
+.hero-heading span {
+  font-size: clamp(1.2rem, 3vw, 2rem);
   text-shadow: 2px 2px 3px grey;
 }
