@@ -2,50 +2,62 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/18582f7f-a53f-40d9-a6a5-b16d36dd93be/deploy-status)](https://app.netlify.com/sites/netlifyleoportfolio/deploys)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
-![Vitest](https://img.shields.io/badge/Vitest-passing-green?style=flat-square&logo=vitest)
+![Node](https://img.shields.io/badge/Node-18-339933?logo=node.js)
 
-A personal portfolio built with React 18 and Vite. Live at [netlifyleoportfolio.netlify.app](https://netlifyleoportfolio.netlify.app).
+A personal portfolio site for a Dallas-based technology generalist covering web development, DevOps, and Linux. Built with React 18 and Vite.
+
+**Live:** [netlifyleoportfolio.netlify.app](https://netlifyleoportfolio.netlify.app)
+**Repo:** [github.com/lfernandez79/reactPortfolio](https://github.com/lfernandez79/reactPortfolio)
 
 ## Tech Stack
 
-- **React 18** + **Vite 5** — fast dev server and optimized production builds
-- **Framer Motion** — staggered hero reveal, NavBar hover animations, scroll-triggered project cards
-- **react-scroll** — smooth anchor-scroll navigation
-- **Vanta.NET** — animated WebGL background
-- **Iconify** — colored tech logos (devicon set) for skills section
-- **Font Awesome** — social icons
-- **Netlify Forms** — contact form with spam protection
-- **Vitest** + **React Testing Library** — component testing
-- **Prettier** + **ESLint** + **Husky** — code quality and formatting on pre-commit
+| Category | Tools |
+|---|---|
+| **Framework** | React 18, Vite 5 |
+| **Animations** | Framer Motion (staggered reveals, scroll-triggered cards, hover effects) |
+| **Navigation** | react-scroll (smooth anchor scrolling) |
+| **Background** | Vanta.NET + Three.js (interactive WebGL net) |
+| **Icons** | Iconify (devicon tech logos), Font Awesome (social icons) |
+| **Styling** | CSS custom properties, CSS Grid, mobile-first responsive design |
+| **Forms** | Netlify Forms (contact form with spam filtering) |
+| **Testing** | Vitest, React Testing Library |
+| **Code Quality** | Prettier, ESLint, Husky + lint-staged (pre-commit hooks) |
 
-## Development
+## Getting Started
 
 ```bash
-nvm use 18         # requires Node 18 (see .nvmrc)
+nvm use 18         # Node 18 required (see .nvmrc)
 npm install
 npm start          # dev server → http://localhost:3000
-npm run build      # production build → dist/
-npm test           # run tests with Vitest
-npm run lint       # ESLint
-npm run format     # Prettier
 ```
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm start` | Start Vite dev server |
+| `npm run build` | Production build → `dist/` |
+| `npm test` | Run Vitest with coverage |
+| `npm run lint` | ESLint check |
+| `npm run fix` | ESLint auto-fix |
+| `npm run format` | Prettier format `src/` |
+| `npm run format:check` | Prettier check (CI) |
+| `npm run preview` | Preview production build |
 
 ## Deployment
 
-Auto-deployed to Netlify on push to `master`. The `netlify.toml` at the repo root configures the build command and publish directory. Node version pinned to 18.
+Auto-deployed to [Netlify](https://www.netlify.com/) on push to `master`. Build configuration is in `netlify.toml`. Node version pinned to 18 via `netlify.toml` and `.nvmrc`.
 
-## Modernization Roadmap
+## Project Structure
 
-- [x] Migrate CRA → Vite
-- [x] Extract content to data layer
-- [x] CSS design system with custom properties
-- [x] Move CDN dependencies to npm
-- [x] Mobile-first responsive CSS (Bootstrap removed)
-- [x] Replace animations with Framer Motion
-- [x] Prettier + Husky code quality gates
-- [x] Visual refresh — modern typography, richer color palette, skills section
-- [x] Content cleanup — removed outdated projects, updated descriptions and images
+```
+src/
+  components/       NavBar, Footer (shared layout)
+  pages/            Welcome, About, Projects, Contact (section components)
+  data/             portfolio.js (content), images.js (image imports)
+  styles/           tokens.css (design tokens), global.css (resets, fonts)
+```
 
 ## License
 
-MIT
+[MIT](LICENSE)
