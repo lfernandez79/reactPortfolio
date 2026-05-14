@@ -1,5 +1,6 @@
 # Leo Fernandez — Technology Generalist Portfolio
 
+[![CI](https://github.com/lfernandez79/reactPortfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/lfernandez79/reactPortfolio/actions/workflows/ci.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/18582f7f-a53f-40d9-a6a5-b16d36dd93be/deploy-status)](https://app.netlify.com/sites/netlifyleoportfolio/deploys)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
 ![Node](https://img.shields.io/badge/Node-18-339933?logo=node.js)
