@@ -23,39 +23,9 @@
   -webkit-backdrop-filter: blur(2px);
 }
 
-.about-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-lg);
-  padding: var(--space-md) 0;
-}
-
-@media (min-width: 768px) {
-  .about-layout {
-    grid-template-columns: 1fr 2fr;
-  }
-}
-
-.about-portrait-col {
-  display: flex;
-  justify-content: center;
-}
-
-.about-portrait {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: var(--radius-circle);
-  box-shadow: var(--shadow-portrait);
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  transition: var(--transition-base);
-}
-
-.about-portrait:hover {
-  filter: blur(0);
-  -webkit-filter: blur(0);
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+.about-bio {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .about-bio p {
