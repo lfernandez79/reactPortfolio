@@ -10,6 +10,17 @@ const PORT = 4173;
 const URL = `http://127.0.0.1:${PORT}/`;
 const STARTUP_TIMEOUT_MS = 30000;
 const NAV_TIMEOUT_MS = 15000;
+const OVERALL_BUDGET_MS = 90000;
+
+// Hard ceiling so a hung child / lingering handle can never leave the
+// CI job spinning. If we don't reach a verdict in this budget, fail.
+const watchdog = setTimeout(() => {
+  console.error(
+    `Smoke check FAILED: watchdog tripped at ${OVERALL_BUDGET_MS}ms`
+  );
+  process.exit(1);
+}, OVERALL_BUDGET_MS);
+watchdog.unref();
 
 const CHROME_CANDIDATES = [
   process.env.PUPPETEER_EXECUTABLE_PATH,
@@ -45,9 +56,19 @@ const stopPreview = () => {
   } catch {
     /* already gone */
   }
+  // SIGKILL backup in case the child ignores SIGTERM.
+  setTimeout(() => {
+    try {
+      preview.kill("SIGKILL");
+    } catch {
+      /* already gone */
+    }
+  }, 1500).unref();
 };
-process.on("exit", stopPreview);
-process.on("SIGINT", () => process.exit(130));
+process.on("SIGINT", () => {
+  stopPreview();
+  process.exit(130);
+});
 
 const waitForServer = async () => {
   const deadline = Date.now() + STARTUP_TIMEOUT_MS;
@@ -63,61 +84,72 @@ const waitForServer = async () => {
   throw new Error(`preview did not respond within ${STARTUP_TIMEOUT_MS}ms`);
 };
 
-await waitForServer();
+const finish = (code, message) => {
+  if (message) {
+    if (code === 0) console.log(message);
+    else console.error(message);
+  }
+  stopPreview();
+  process.exit(code);
+};
 
-const browser = await puppeteer.launch({
-  executablePath: chrome,
-  headless: "new",
-  args: ["--no-sandbox", "--disable-setuid-sandbox"],
-});
+try {
+  await waitForServer();
 
-const page = await browser.newPage();
-const pageErrors = [];
-const failedRequests = [];
-const consoleErrors = [];
+  const browser = await puppeteer.launch({
+    executablePath: chrome,
+    headless: "new",
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
 
-page.on("pageerror", (err) => pageErrors.push(err.message));
-page.on("requestfailed", (req) =>
-  failedRequests.push(`${req.url()} → ${req.failure()?.errorText}`)
-);
-page.on("console", (msg) => {
-  if (msg.type() === "error") consoleErrors.push(msg.text());
-});
+  const page = await browser.newPage();
+  const pageErrors = [];
+  const failedRequests = [];
+  const consoleErrors = [];
 
-// `load` fires when the initial document + subresources are done.
-// `networkidle0` is too strict on slow runners (Vite preview keeps
-// occasional connections alive that prevent it from triggering).
-await page.goto(URL, { waitUntil: "load", timeout: NAV_TIMEOUT_MS });
-// Let useEffect-driven mounts (Vanta) settle.
-await new Promise((r) => setTimeout(r, 1500));
+  page.on("pageerror", (err) => pageErrors.push(err.message));
+  page.on("requestfailed", (req) =>
+    failedRequests.push(`${req.url()} → ${req.failure()?.errorText}`)
+  );
+  page.on("console", (msg) => {
+    if (msg.type() === "error") consoleErrors.push(msg.text());
+  });
 
-const sanity = await page.evaluate(() => ({
-  hasNavBar: !!document.querySelector(".navbar"),
-  hasCanvas: !!document.querySelector("canvas"),
-  bodyTextLen: document.body.innerText.length,
-  title: document.title,
-}));
+  // `load` fires when the initial document + subresources are done.
+  // `networkidle0` is too strict on slow runners.
+  await page.goto(URL, { waitUntil: "load", timeout: NAV_TIMEOUT_MS });
+  // Let useEffect-driven mounts (Vanta) settle.
+  await new Promise((r) => setTimeout(r, 1500));
 
-await browser.close();
-stopPreview();
+  const sanity = await page.evaluate(() => ({
+    hasNavBar: !!document.querySelector(".navbar"),
+    hasCanvas: !!document.querySelector("canvas"),
+    bodyTextLen: document.body.innerText.length,
+    title: document.title,
+  }));
 
-const problems = [];
-if (pageErrors.length)
-  problems.push(`page errors:\n    ${pageErrors.join("\n    ")}`);
-if (failedRequests.length)
-  problems.push(`failed requests:\n    ${failedRequests.join("\n    ")}`);
-if (consoleErrors.length)
-  problems.push(`console errors:\n    ${consoleErrors.join("\n    ")}`);
-if (!sanity.hasNavBar) problems.push(`expected .navbar in DOM, missing`);
-if (!sanity.hasCanvas)
-  problems.push(`expected <canvas> (Vanta init) in DOM, missing`);
-if (sanity.bodyTextLen < 30)
-  problems.push(`body text too short (${sanity.bodyTextLen} chars)`);
+  await browser.close();
 
-if (problems.length) {
-  console.error("Smoke check FAILED:");
-  for (const p of problems) console.error(`  - ${p}`);
-  process.exit(1);
+  const problems = [];
+  if (pageErrors.length)
+    problems.push(`page errors:\n    ${pageErrors.join("\n    ")}`);
+  if (failedRequests.length)
+    problems.push(`failed requests:\n    ${failedRequests.join("\n    ")}`);
+  if (consoleErrors.length)
+    problems.push(`console errors:\n    ${consoleErrors.join("\n    ")}`);
+  if (!sanity.hasNavBar) problems.push(`expected .navbar in DOM, missing`);
+  if (!sanity.hasCanvas)
+    problems.push(`expected <canvas> (Vanta init) in DOM, missing`);
+  if (sanity.bodyTextLen < 30)
+    problems.push(`body text too short (${sanity.bodyTextLen} chars)`);
+
+  if (problems.length) {
+    console.error("Smoke check FAILED:");
+    for (const p of problems) console.error(`  - ${p}`);
+    finish(1);
+  }
+
+  finish(0, `Smoke check PASSED: ${JSON.stringify(sanity)}`);
+} catch (err) {
+  finish(1, `Smoke check FAILED: ${err?.stack || err}`);
 }
-
-console.log("Smoke check PASSED:", JSON.stringify(sanity));
