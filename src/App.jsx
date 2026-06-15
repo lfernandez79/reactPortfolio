@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import * as THREE from "three";
-import * as VantaNet from "vanta/dist/vanta.net.min";
-const VANTA = VantaNet.default ?? VantaNet;
+import * as VantaNetModule from "vanta/dist/vanta.net.min";
 import NavBar from "./components/NavBar";
 import Welcome from "./pages/Welcome/Welcome";
 import About from "./pages/About/About";
@@ -10,12 +9,20 @@ import Footer from "./components/Footer";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 
+// Vite 8 / Rolldown wraps Vanta's UMD twice — the NET function lands at
+// `.default.default`, not `.default`. Walk both interop shapes.
+const VANTA =
+  (typeof VantaNetModule === "function" && VantaNetModule) ||
+  (typeof VantaNetModule.default === "function" && VantaNetModule.default) ||
+  (typeof VantaNetModule.default?.default === "function" && VantaNetModule.default.default) ||
+  null;
+
 function App() {
   const [vantaEffect, setVantaEffect] = useState(null);
   const vantaRef = useRef(null);
 
   useEffect(() => {
-    if (!vantaEffect) {
+    if (!vantaEffect && VANTA) {
       setVantaEffect(
         VANTA({
           el: vantaRef.current,
