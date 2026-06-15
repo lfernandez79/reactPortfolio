@@ -1,1 +1,3 @@
+node -e 'const [maj,min]=process.versions.node.split(".").map(Number); if (maj<20 || (maj===20 && min<19)) { console.error("\n  This repo requires Node >=20.19 (Vite 8 / Vitest 4 / lint-staged).\n  Active Node: "+process.versions.node+"\n  Run `nvm use` from the repo root.\n"); process.exit(1); }'
+
 npx lint-staged
