@@ -84,7 +84,10 @@ page.on("console", (msg) => {
   if (msg.type() === "error") consoleErrors.push(msg.text());
 });
 
-await page.goto(URL, { waitUntil: "networkidle0", timeout: NAV_TIMEOUT_MS });
+// `load` fires when the initial document + subresources are done.
+// `networkidle0` is too strict on slow runners (Vite preview keeps
+// occasional connections alive that prevent it from triggering).
+await page.goto(URL, { waitUntil: "load", timeout: NAV_TIMEOUT_MS });
 // Let useEffect-driven mounts (Vanta) settle.
 await new Promise((r) => setTimeout(r, 1500));
 
