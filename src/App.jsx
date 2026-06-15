@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import * as THREE from "three";
-import VANTA from "vanta/dist/vanta.net.min";
+import * as VantaNet from "vanta/dist/vanta.net.min";
+const VANTA = VantaNet.default ?? VantaNet;
 import NavBar from "./components/NavBar";
 import Welcome from "./pages/Welcome/Welcome";
 import About from "./pages/About/About";
