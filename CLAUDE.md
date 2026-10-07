@@ -22,17 +22,22 @@ npx vitest run src/__test__/App.test.jsx
 
 ## Architecture
 
-Single-page portfolio app built with **Vite + React 18**. No routing — navigation uses `react-scroll` to anchor-scroll to named `id`s within the page. Layout is a vertical stack rendered in `App.jsx`:
+Multi-page portfolio app built with **Vite 8 + React 18**, routed with **react-router-dom**. Routes are declared in `App.jsx`:
 
 ```
-NavBar → Welcome → About → Projects → Contact → Footer
+/          → Welcome
+/about     → About
+/projects  → Projects
+/contact   → Contact
 ```
 
-- **Components** (`src/components/`): `NavBar` and `Footer` — shared layout pieces.
+Unknown paths hit a catch-all route that redirects home (`<Navigate to="/" replace />`), so mistyped URLs never render a blank page. A Vanta.NET animated background is initialized once in `App.jsx` (behind all routes) and skips itself when the user prefers reduced motion.
+
+- **Components** (`src/components/`): `NavBar` (router `NavLink`s) and `Footer` — shared layout pieces.
 - **Pages** (`src/pages/`): Each section is a standalone stateless functional component with a co-located CSS file. Images live in `src/pages/images/`.
 - **Contact form** uses Netlify Forms — hidden form in `index.html` (root) is required for Netlify's build bot to detect it; `NetlifyForms.jsx` renders the visible form with matching `name="contact"`.
 - **Data layer** (`src/data/`): `portfolio.js` exports `owner` (name, title, bio, email, social links) and `projects` array — single source of truth for all content. `images.js` exports all image imports keyed by string matching `projects[].image`.
-- **NavBar** uses `react-scroll` `<Link>` for smooth scrolling. Framer Motion hover animation (lift + underline slide).
+- **NavBar** uses react-router-dom `<NavLink>` for client-side routing. Framer Motion hover animation (lift + underline slide).
 - **Styling**: Mobile-first responsive CSS using CSS Grid and flexbox. CSS custom properties defined in `src/styles/tokens.css` (colors, spacing, typography, breakpoints). Global resets and font imports in `src/styles/global.css`. Per-component CSS files consume tokens via `var(--*)`. No Bootstrap — all layout is native CSS.
 - **Background animation**: Vanta.NET initialized via `useEffect` in `App.jsx` with cleanup on unmount.
 - **Icons**: Font Awesome (`@fortawesome/react-fontawesome`) for social icons in Contact; Iconify (`@iconify/react`) for Netlify logo in Footer and `devicon:*` tech logos in the About skills section.
@@ -67,3 +72,4 @@ NavBar → Welcome → About → Projects → Contact → Footer
 | 8 — Visual refresh | ✅ Done | Modern typography (Inter headings), richer color palette, gradient About section, skills/tech stack with Iconify devicon icons |
 | 9 — Content cleanup | ✅ Done | Removed Static Portfolio project, updated descriptions and project images |
 | 10 — Node upgrade | ✅ Done | Node 18→20, CI actions v4→v6, jsdom unpinned, portrait cleanup |
+| 11 — Review fixes (Oct 2026) | ✅ Done | 404 catch-all route, OG/Twitter meta + sitemap, form a11y labels, stale `public/index.html` removed, manifest rebrand, Vanta reduced-motion guard + init try/catch, fonts via `<link>` preconnect, smoke test covers 404 |

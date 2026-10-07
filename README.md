@@ -3,7 +3,7 @@
 [![CI](https://github.com/lfernandez79/reactPortfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/lfernandez79/reactPortfolio/actions/workflows/ci.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/18582f7f-a53f-40d9-a6a5-b16d36dd93be/deploy-status)](https://app.netlify.com/sites/netlifyleoportfolio/deploys)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lfernandez79/reactPortfolio?logo=github)
-![Node](https://img.shields.io/badge/Node-18-339933?logo=node.js)
+![Node](https://img.shields.io/badge/Node-20-339933?logo=node.js)
 
 A personal portfolio site for a Dallas-based technology generalist covering web development, DevOps, and Linux. Built with React 18 and Vite.
 
@@ -14,19 +14,19 @@ A personal portfolio site for a Dallas-based technology generalist covering web 
 
 | Category | Tools |
 |---|---|
-| **Framework** | React 18, Vite 6 |
+| **Framework** | React 18, Vite 8 |
 | **Animations** | Framer Motion (staggered reveals, scroll-triggered cards, hover effects) |
-| **Navigation** | react-scroll (smooth anchor scrolling) |
+| **Navigation** | react-router-dom (multi-page routing: /, /about, /projects, /contact) |
 | **Background** | Vanta.NET + Three.js (interactive WebGL net) |
 | **Icons** | Iconify (devicon tech logos), Font Awesome (social icons) |
 | **Styling** | CSS custom properties, CSS Grid, mobile-first responsive design |
 | **Forms** | Netlify Forms (contact form with spam filtering) |
-| **Testing** | Vitest, React Testing Library (smoke test) |
+| **Testing** | Vitest + React Testing Library (unit), puppeteer-core production smoke test in CI |
 
 ## Getting Started
 
 ```bash
-nvm use 18         # Node 18 required (see .nvmrc)
+nvm use 20         # Node 20 required (see .nvmrc)
 npm install
 npm start          # dev server → http://localhost:3000
 ```
@@ -46,7 +46,7 @@ npm start          # dev server → http://localhost:3000
 
 ## Deployment
 
-Auto-deployed to [Netlify](https://www.netlify.com/) on push to `master`. Build configuration is in `netlify.toml`. Node version pinned to 18 via `netlify.toml` and `.nvmrc`.
+Auto-deployed to [Netlify](https://www.netlify.com/) on push to `master`. Build configuration is in `netlify.toml`. Node version pinned to 20 via `netlify.toml` and `.nvmrc`.
 
 ## Project Structure
 

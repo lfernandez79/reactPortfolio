@@ -128,6 +128,19 @@ try {
     title: document.title,
   }));
 
+  // 404 handling: an unknown route must redirect home via the catch-all
+  // route — it must never render a blank page.
+  const notFoundPage = await browser.newPage();
+  await notFoundPage.goto(`${URL}this-route-does-not-exist-12345`, {
+    waitUntil: "load",
+    timeout: NAV_TIMEOUT_MS,
+  });
+  await new Promise((r) => setTimeout(r, 1500));
+  const notFoundTextLen = await notFoundPage.evaluate(
+    () => document.body.innerText.length
+  );
+  await notFoundPage.close();
+
   await browser.close();
 
   const problems = [];
@@ -142,6 +155,10 @@ try {
     problems.push(`expected <canvas> (Vanta init) in DOM, missing`);
   if (sanity.bodyTextLen < 30)
     problems.push(`body text too short (${sanity.bodyTextLen} chars)`);
+  if (notFoundTextLen < 30)
+    problems.push(
+      `unknown route rendered a near-blank page (${notFoundTextLen} chars)`
+    );
 
   if (problems.length) {
     console.error("Smoke check FAILED:");
