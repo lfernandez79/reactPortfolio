@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import * as THREE from "three";
 import * as VantaNetModule from "vanta/dist/vanta.net.min";
 import NavBar from "./components/NavBar";
@@ -23,24 +23,35 @@ function App() {
 
   useEffect(() => {
     if (!vantaEffect && VANTA) {
-      setVantaEffect(
-        VANTA({
-          el: vantaRef.current,
-          THREE,
-          mouseControls: true,
-          touchControls: true,
-          minHeight: 200,
-          minWidth: 200,
-          scale: 1,
-          scaleMobile: 1,
-          color: 0x2a7a8c,
-          backgroundColor: 0xf1f5f9,
-          points: 8,
-          maxDistance: 25,
-          spacing: 20,
-          showDots: true,
-        })
-      );
+      // Respect users who prefer reduced motion; also guard against
+      // environments without WebGL so a failed init can't take down the app.
+      // (matchMedia may not exist in test environments like jsdom.)
+      const prefersReducedMotion =
+        typeof window.matchMedia === "function" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (prefersReducedMotion) return;
+      try {
+        setVantaEffect(
+          VANTA({
+            el: vantaRef.current,
+            THREE,
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200,
+            minWidth: 200,
+            scale: 1,
+            scaleMobile: 1,
+            color: 0x2a7a8c,
+            backgroundColor: 0xf1f5f9,
+            points: 8,
+            maxDistance: 25,
+            spacing: 20,
+            showDots: true,
+          })
+        );
+      } catch (err) {
+        console.warn("Vanta background failed to initialize:", err);
+      }
     }
     return () => {
       if (vantaEffect) vantaEffect.destroy();
@@ -66,6 +77,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            {/* Unknown URLs redirect home instead of rendering a blank page */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
 

@@ -20,17 +20,17 @@ function NetlifyForm() {
         <input type="hidden" name="form-name" value="contact" />
         <p style={style.text}>
           <label>
-            <input style={style.boxShadow} type="text" name="name" placeholder="Your Name" />
+            <input style={style.boxShadow} type="text" name="name" placeholder="Your Name" aria-label="Your name" />
           </label>
         </p>
         <p style={style.text}>
           <label>
-            <input style={style.boxShadow} type="email" name="email" placeholder="your@email.com" />
+            <input style={style.boxShadow} type="email" name="email" placeholder="your@email.com" aria-label="Your email address" />
           </label>
         </p>
         <p style={style.text}>
           <label>
-            <textarea style={style.boxShadow} name="message" rows="4" placeholder="Your message" />
+            <textarea style={style.boxShadow} name="message" rows="4" placeholder="Your message" aria-label="Your message" />
           </label>
         </p>
         <p className="contact-form-actions">

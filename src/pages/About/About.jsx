@@ -43,7 +43,7 @@ function About() {
       <div className="skills-section">
         {skills.map((group) => (
           <div key={group.category} className="skills-group">
-            <h4 className="skills-category">{group.category}</h4>
+            <h2 className="skills-category">{group.category}</h2>
             <div className="skills-grid">
               {group.items.map((skill) => (
                 <div key={skill.name} className="skill-chip">

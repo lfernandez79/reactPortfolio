@@ -28,7 +28,9 @@ function ProjectCard({ project }) {
         <p className="text1">{project.title}</p>
         <p className="text2">{project.description}</p>
         <p className="text3">
-          <a href={project.url}>Deployed</a>
+          <a href={project.url} target="_blank" rel="noreferrer">
+            View live site
+          </a>
         </p>
       </div>
     </motion.div>
