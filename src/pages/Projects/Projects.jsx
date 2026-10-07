@@ -5,7 +5,6 @@ import { images } from "../../data/images";
 import "./Projects.css";
 
 const directionMap = {
-  "fade-up": { opacity: 0, y: 40 },
   "fade-down": { opacity: 0, y: -40 },
   "fade-right": { opacity: 0, x: -40 },
 };
